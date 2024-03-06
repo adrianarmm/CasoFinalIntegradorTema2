@@ -1,5 +1,9 @@
 package ZOOLOGICO.ANIMALES;
 
+import ZOOLOGICO.ANIMALES.acuatico;
+import ZOOLOGICO.ANIMALES.ave;
+import ZOOLOGICO.ANIMALES.terrestre;
+
 public class MAINANIMALES {
 
     public static void main(String[] args) {
