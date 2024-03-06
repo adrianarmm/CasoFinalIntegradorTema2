@@ -40,16 +40,6 @@ public class terrestres extends habitats{
         this.puede_caminar = puede_caminar;
     }
 
-    public String getTemperatura() {
 
-            return null;
     }
 
-    public String getHumedad() {
-        return null;
-    }
-
-    public String isLimpieza() {
-        return null;
-    }
-}

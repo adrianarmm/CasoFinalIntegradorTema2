@@ -39,11 +39,4 @@ public class ave extends habitats {
         return null;
     }
 
-    public String getHumedad() {
-        return null;
-    }
-
-    public String isLimpieza() {
-        return null;
-    }
 }
