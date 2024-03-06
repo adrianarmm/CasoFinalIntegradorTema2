@@ -299,5 +299,10 @@ public class animal {
     public void registrarRaza(String raza) {
         System.out.println("El animal " + nombre + " ha sido medido y su raza es " + raza);
     }
+
+    //metodo para registrar la especie
+    public void registrarEspecie(String especie) {
+        System.out.println("El animal " + nombre + " ha sido medido y su especie es " + especie);
+    }
 }
 
