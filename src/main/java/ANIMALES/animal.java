@@ -290,5 +290,9 @@ public class animal {
     public void registrarEdad(String edad) {
         System.out.println("El animal " + nombre + " ha sido medido y su edad es " + edad);
     }
+    //metodo para registrar el color
+    public void registrarColor(String color) {
+        System.out.println("El animal " + nombre + " ha sido medido y su color es " + color);
+    }
 }
 
