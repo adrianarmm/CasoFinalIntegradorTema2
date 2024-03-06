@@ -19,5 +19,9 @@ public class acuatico extends animal {ç
             return aletas;
         }
 
+        public void setAletas(boolean aletas) {
+            this.aletas = aletas;
+        }
+
 
 }
