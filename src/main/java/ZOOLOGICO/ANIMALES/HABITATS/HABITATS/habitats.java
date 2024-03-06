@@ -1,4 +1,4 @@
-package HABITATS;
+package ZOOLOGICO.ANIMALES.HABITATS.HABITATS;
 
 public class habitats {
     float temperatura;
