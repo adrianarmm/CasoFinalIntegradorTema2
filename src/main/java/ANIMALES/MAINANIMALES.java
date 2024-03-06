@@ -32,5 +32,9 @@ public class MAINANIMALES {
         aguila.buencomportamiento(true);
         aguila.registrarReproduccion("Águila macho");
 
+        // Crear instancia de un animal terrestre
+        terrestre leon = new terrestre("León", "Mamífero", "León africano", "Amarillo", "Macho", "8 años",
+                "150 kg", "1.2 m", "Terrestre", "Savanna", "Cervidos y antílopes", "Vivíparo", "Cazar en manada",
+                "Parásitos intestinales", "Vacuna antiparasitaria", 3, true, true, true, true, true, "Savanna");
 
     }
