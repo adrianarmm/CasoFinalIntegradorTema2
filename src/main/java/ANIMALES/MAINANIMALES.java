@@ -37,4 +37,13 @@ public class MAINANIMALES {
                 "150 kg", "1.2 m", "Terrestre", "Savanna", "Cervidos y antílopes", "Vivíparo", "Cazar en manada",
                 "Parásitos intestinales", "Vacuna antiparasitaria", 3, true, true, true, true, true, "Savanna");
 
+        // Mostrar información del león
+        System.out.println("\nInformación del león:");
+        System.out.println("Nombre: " + leon.getNombre());
+        System.out.println("Especie: " + leon.getEspecie());
+        System.out.println("Color: " + leon.getColor());
+        System.out.println("Tipo terrestre: " + leon.getTipo_terrestre());
+        leon.registrarCuidados("Cepillado diario");
+        leon.registrarEnfermedades("Parásitos intestinales");
+    }
     }
