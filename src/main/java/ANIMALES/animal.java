@@ -281,5 +281,10 @@ public class animal {
     public void registrarPeso(String peso) {
         System.out.println("El animal " + nombre + " ha sido pesado y su peso es " + peso);
     }
+
+    //metodo para registrar la altura
+    public void registrarAltura(String altura) {
+        System.out.println("El animal " + nombre + " ha sido medido y su altura es " + altura);
+    }
 }
 
