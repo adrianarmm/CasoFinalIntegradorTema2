@@ -39,6 +39,14 @@ public class acuatico extends animal {ç
         this.escamas = escamas;
     }
 
+    public String getTipo_agua() {
+        return tipo_agua;
+    }
+
+    public void setTipo_agua(String tipo_agua) {
+        this.tipo_agua = tipo_agua;
+    }
+
 
 
 }
