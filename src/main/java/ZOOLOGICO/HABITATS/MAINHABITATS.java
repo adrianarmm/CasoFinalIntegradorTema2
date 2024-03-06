@@ -1,7 +1,6 @@
-package ZOOLOGICO.HABITATS;
+package HABITATS;
 
-public class MAINHABITATS {
-
+public class Main {
     public static void main(String[] args) {
         // Crear instancia de un hábitat acuático
         acuaticos habitatAcuatico = new acuaticos(25.5f, 70.2f, true, true);
@@ -34,4 +33,3 @@ public class MAINHABITATS {
         System.out.println("Puede caminar: " + habitatTerrestre.isPuede_caminar());
     }
 }
-
