@@ -14,5 +14,8 @@ public class acuatico extends animal {ç
         this.escamas = escamas;
         this.tipodeagua = tipodeagua;
 
+        public boolean isAletas() {
+            return aletas;
+        }
 
 }
