@@ -10,4 +10,16 @@ public class habitats {
         this.humedad = humedad;
         this.limpieza = limpieza;
     }
+
+    @Override
+    public String toString() {
+        return "habitats []";
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        // TODO Auto-generated method stub
+        return super.clone();
+    }
+
 }
