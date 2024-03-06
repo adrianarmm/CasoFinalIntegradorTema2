@@ -40,11 +40,11 @@ public class acuatico extends animal {
     }
 
     public String getTipo_agua() {
-        return tipo_agua;
+        return tipodeagua;
     }
 
     public void setTipo_agua(String tipo_agua) {
-        this.tipo_agua = tipo_agua;
+        this.tipodeagua = tipo_agua;
     }
 
 
