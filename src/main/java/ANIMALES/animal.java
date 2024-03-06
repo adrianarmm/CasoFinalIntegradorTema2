@@ -92,6 +92,45 @@ public class animal {
         this.raza = raza;
     }
 
+    public String getColor() {
+        return color;
+    }
+
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+
+    public String getSexo() {
+        return sexo;
+    }
+
+
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
+    }
+
+
+    public String getEdad() {
+        return edad;
+    }
+
+
+    public void setEdad(String edad) {
+        this.edad = edad;
+    }
+
+
+    public String getPeso() {
+        return peso;
+    }
+
+
+    public void setPeso(String peso) {
+        this.peso = peso;
+    }
+
 
 }
 
