@@ -329,5 +329,10 @@ public class animal {
         System.out.println(registrarSalud(salud));
         return salud;
     }
+    // metodo para registrar el comportamiento
+    public boolean registrarComportamiento(boolean comportamiento) {
+        System.out.println(registrarComportamiento(comportamiento));
+        return comportamiento;
+    }
 }
 
