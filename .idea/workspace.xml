@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5db1ac8a-ea94-437a-84bb-e710ea8f005c" name="Changes" comment="cambios">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/HABITATS/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/HABITATS/MAINHABITATS.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/HABITATS/acuaticos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/HABITATS/acuaticos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/HABITATS/ave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/HABITATS/ave.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,31 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1709717493665</updated>
-      <workItem from="1709717494919" duration="4636000" />
-    </task>
-    <task id="LOCAL-00033" summary="uso boolean y string">
-      <option name="closed" value="true" />
-      <created>1709719059465</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1709719059465</updated>
-    </task>
-    <task id="LOCAL-00034" summary="cambio">
-      <option name="closed" value="true" />
-      <created>1709719070749</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1709719070749</updated>
-    </task>
-    <task id="LOCAL-00035" summary="creacion public acuatico">
-      <option name="closed" value="true" />
-      <created>1709719099531</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1709719099531</updated>
+      <workItem from="1709717494919" duration="4949000" />
     </task>
     <task id="LOCAL-00036" summary="implento public booleans">
       <option name="closed" value="true" />
@@ -467,7 +441,31 @@
       <option name="project" value="LOCAL" />
       <updated>1709722041101</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="cambios">
+      <option name="closed" value="true" />
+      <created>1709722151122</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1709722151122</updated>
+    </task>
+    <task id="LOCAL-00083" summary="cambios">
+      <option name="closed" value="true" />
+      <created>1709722297288</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1709722297288</updated>
+    </task>
+    <task id="LOCAL-00084" summary="cambios">
+      <option name="closed" value="true" />
+      <created>1709722384066</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1709722384066</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

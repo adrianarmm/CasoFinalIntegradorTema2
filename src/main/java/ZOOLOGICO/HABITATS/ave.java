@@ -35,9 +35,6 @@ public class ave extends habitats {
     }
 
 
-    public String getTemperatura() {
-        return null;
-    }
 
     public float getHumedad() {
         return humedad;
@@ -53,5 +50,13 @@ public class ave extends habitats {
 
     public void setLimpieza(boolean limpieza) {
         this.limpieza = limpieza;
+    }
+
+    public float getTemperatura() {
+        return temperatura;
+    }
+
+    public void setTemperatura(String temperatura) {
+        this.temperatura = Float.parseFloat(temperatura);
     }
 }
