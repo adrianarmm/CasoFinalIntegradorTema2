@@ -219,5 +219,21 @@ public class animal {
     }
 
 
+    public boolean isSalud() {
+        return salud;
+    }
+
+    public void setSalud(boolean salud) {
+        this.salud = salud;
+    }
+
+    public boolean isComportamiento() {
+        return comportamiento;
+    }
+
+    public void setComportamiento(boolean comportamiento) {
+        this.comportamiento = comportamiento;
+    }
+
 }
 
