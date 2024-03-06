@@ -277,5 +277,9 @@ public class animal {
     public void registrarHabitat(String habitat) {
         System.out.println("El animal " + nombre + " ha sido trasladado a " + habitat);
     }
+    //metodo para registrar el peso
+    public void registrarPeso(String peso) {
+        System.out.println("El animal " + nombre + " ha sido pesado y su peso es " + peso);
+    }
 }
 
