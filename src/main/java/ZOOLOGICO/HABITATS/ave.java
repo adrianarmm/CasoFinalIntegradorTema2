@@ -1,6 +1,6 @@
 package ZOOLOGICO.HABITATS;
 
-public class ave extends habitats{
+public class ave extends habitats {
     boolean puede_volar;
 
     public ave(float temperatura,float humedad,boolean limpieza, boolean puede_volar) {
@@ -35,5 +35,4 @@ public class ave extends habitats{
     }
 
 
-}
 }

@@ -1,6 +1,6 @@
 package ZOOLOGICO.HABITATS;
 
-public class acuaticos extends habitats{
+public class acuaticos extends habitats {
     boolean puede_nadar;
 
     public acuaticos(float temperatura,float humedad,boolean limpieza,boolean puede_nadar) {
@@ -46,5 +46,3 @@ public class acuaticos extends habitats{
 
 }
 
-
-}
