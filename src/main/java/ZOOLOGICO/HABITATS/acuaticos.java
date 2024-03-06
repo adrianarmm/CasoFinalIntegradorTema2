@@ -46,15 +46,14 @@ public class acuaticos extends habitats {
 
     public String getTemperatura() {
 
-        return null;
+
     }
 
     public String getHumedad() {
-        return null;
+
     }
 
-    public String isLimpieza() {
-        return null;
+    public String isLimpieza() {;
     }
 }
 
