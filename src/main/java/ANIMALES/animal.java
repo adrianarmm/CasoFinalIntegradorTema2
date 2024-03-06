@@ -324,6 +324,10 @@ public class animal {
     public void registrarId(int id) {
         System.out.println("El animal " + nombre + " ha sido medido y su id es " + id);
     }
-
+    // metodo para registrar la salud
+    public boolean registrarSalud(boolean salud) {
+        System.out.println(registrarSalud(salud));
+        return salud;
+    }
 }
 
