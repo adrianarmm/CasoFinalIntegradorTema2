@@ -264,5 +264,10 @@ public class animal {
         System.out.println("El animal " + nombre + " ha sido cuidado con " + cuidado);
     }
 
+    //metodo para registrar las enfermedades
+    public void registrarEnfermedades(String enfermedad) {
+        System.out.println("El animal " + nombre + " ha sido diagnosticado con " + enfermedad);
+    }
+
 }
 
