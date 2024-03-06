@@ -248,5 +248,10 @@ public class animal {
         else
             System.out.println("El animal " + nombre + " se encuentra en mal estado de comportamiento");
     }
+
+    //metodo para registrar la alimentación
+    public void registrarAlimentacion(String alimento) {
+        System.out.println("El animal " + nombre + " ha sido alimentado con " + alimento);
+    }
 }
 
