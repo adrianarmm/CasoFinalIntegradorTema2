@@ -258,5 +258,11 @@ public class animal {
     public void registrarReproduccion(String pareja) {
         System.out.println("El animal " + nombre + " ha tenido una relación con " + pareja);
     }
+
+    //metodo para registrar los cuidados
+    public void registrarCuidados(String cuidado) {
+        System.out.println("El animal " + nombre + " ha sido cuidado con " + cuidado);
+    }
+
 }
 
