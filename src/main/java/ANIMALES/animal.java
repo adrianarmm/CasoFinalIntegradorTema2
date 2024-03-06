@@ -73,5 +73,25 @@ public class animal {
         this.nombre = nombre;
     }
 
+    public String getEspecie() {
+        return especie;
+    }
+
+
+    public void setEspecie(String especie) {
+        this.especie = especie;
+    }
+
+
+    public String getRaza() {
+        return raza;
+    }
+
+
+    public void setRaza(String raza) {
+        this.raza = raza;
+    }
+
+
 }
 
