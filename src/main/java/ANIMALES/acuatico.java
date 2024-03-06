@@ -1,4 +1,5 @@
 package ANIMALES;
 
-public class acuatico {
+public class acuatico extends animal {
+
 }
