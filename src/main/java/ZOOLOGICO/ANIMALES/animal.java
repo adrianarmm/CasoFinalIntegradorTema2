@@ -1,4 +1,4 @@
-package ANIMALES;
+package ZOOLOGICO.ANIMALES;
 
 public class animal {
 
