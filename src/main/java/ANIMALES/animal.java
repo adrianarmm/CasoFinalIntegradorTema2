@@ -64,6 +64,14 @@ public class animal {
         // TODO Auto-generated method stub
         return super.hashCode();
     }
+    public String getNombre() {
+        return nombre;
+    }
+
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 
 }
 
