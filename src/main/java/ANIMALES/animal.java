@@ -314,5 +314,16 @@ public class animal {
     public void registrarSexo(String sexo) {
         System.out.println("El animal " + nombre + " ha sido medido y su sexo es " + sexo);
     }
+
+    //metodo para registrar el tipo
+    public void registrarTipo(String tipo) {
+        System.out.println("El animal " + nombre + " ha sido medido y su tipo es " + tipo);
+    }
+
+    //metodo para registrar el id
+    public void registrarId(int id) {
+        System.out.println("El animal " + nombre + " ha sido medido y su id es " + id);
+    }
+
 }
 
