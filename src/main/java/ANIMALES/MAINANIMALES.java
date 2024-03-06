@@ -23,4 +23,14 @@ public class MAINANIMALES {
                 "5 kg", "1 m", "Ave", "Montañas", "Pequeños mamíferos y aves", "Ovíparo", "Volar a grandes alturas",
                 "Gripe aviar", "Vacuna contra la gripe aviar", 2, true, true, true, true, true, "Aire");
 
+        // Mostrar información del águila
+        System.out.println("\nInformación del águila:");
+        System.out.println("Nombre: " + aguila.getNombre());
+        System.out.println("Especie: " + aguila.getEspecie());
+        System.out.println("Color: " + aguila.getColor());
+        System.out.println("Tipo de aviario: " + aguila.getTipo_aviario());
+        aguila.buencomportamiento(true);
+        aguila.registrarReproduccion("Águila macho");
+
+
     }
