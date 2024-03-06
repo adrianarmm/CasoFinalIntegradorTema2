@@ -1,4 +1,8 @@
-package HABITATS;
+package ZOOLOGICO.HABITATS;
+
+import ZOOLOGICO.HABITATS.acuaticos;
+import ZOOLOGICO.HABITATS.ave;
+import ZOOLOGICO.HABITATS.terrestres;
 
 public class Main {
     public static void main(String[] args) {

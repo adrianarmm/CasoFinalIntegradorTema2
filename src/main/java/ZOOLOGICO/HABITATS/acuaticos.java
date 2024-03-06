@@ -44,12 +44,6 @@ public class acuaticos extends habitats {
         this.puede_nadar = puede_nadar;
     }
 
-    public float getHumedad() {
-        return humedad;
-    }
 
-    public void setHumedad(String humedad) {
-        this.humedad = Float.parseFloat(humedad);
-    }
 }
 
