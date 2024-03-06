@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5db1ac8a-ea94-437a-84bb-e710ea8f005c" name="Changes" comment="arreglos MAINHABITATS" />
+    <list default="true" id="5db1ac8a-ea94-437a-84bb-e710ea8f005c" name="Changes" comment="cambios">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/HABITATS/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/HABITATS/MAINHABITATS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/HABITATS/acuaticos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/HABITATS/acuaticos.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +37,7 @@
   "keyToString": {
     "Application.MAINANIMALES.executor": "Run",
     "Application.MAINHABITATS.executor": "Run",
+    "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -68,47 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1709717493665</updated>
-      <workItem from="1709717494919" duration="4224000" />
-    </task>
-    <task id="LOCAL-00028" summary="metodo para registrar el id">
-      <option name="closed" value="true" />
-      <created>1709718761447</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1709718761447</updated>
-    </task>
-    <task id="LOCAL-00029" summary="metodo para registrar la salud">
-      <option name="closed" value="true" />
-      <created>1709718831693</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1709718831693</updated>
-    </task>
-    <task id="LOCAL-00030" summary="metodo para registrar el comportamiento">
-      <option name="closed" value="true" />
-      <created>1709718869358</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1709718869358</updated>
-    </task>
-    <task id="LOCAL-00031" summary="creacion acuatico">
-      <option name="closed" value="true" />
-      <created>1709718916952</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1709718916952</updated>
-    </task>
-    <task id="LOCAL-00032" summary="creacion acuatico extends animal">
-      <option name="closed" value="true" />
-      <created>1709719028752</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1709719028752</updated>
+      <workItem from="1709717494919" duration="4636000" />
     </task>
     <task id="LOCAL-00033" summary="uso boolean y string">
       <option name="closed" value="true" />
@@ -462,14 +427,64 @@
       <option name="project" value="LOCAL" />
       <updated>1709721719208</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="cambios">
+      <option name="closed" value="true" />
+      <created>1709721775977</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1709721775977</updated>
+    </task>
+    <task id="LOCAL-00078" summary="cambios">
+      <option name="closed" value="true" />
+      <created>1709721820494</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1709721820495</updated>
+    </task>
+    <task id="LOCAL-00079" summary="cambios">
+      <option name="closed" value="true" />
+      <created>1709721860141</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1709721860141</updated>
+    </task>
+    <task id="LOCAL-00080" summary="cambios">
+      <option name="closed" value="true" />
+      <created>1709721951815</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1709721951815</updated>
+    </task>
+    <task id="LOCAL-00081" summary="cambios">
+      <option name="closed" value="true" />
+      <created>1709722041101</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1709722041101</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="implementacion de boolean e is + void y set" />
     <MESSAGE value="creacion public class terrestre" />
     <MESSAGE value="implemento booleans y string" />
     <MESSAGE value="creacion public terrestre" />
@@ -494,6 +509,7 @@
     <MESSAGE value="creo un main temporal de habitats" />
     <MESSAGE value="arreglos" />
     <MESSAGE value="arreglos MAINHABITATS" />
-    <option name="LAST_COMMIT_MESSAGE" value="arreglos MAINHABITATS" />
+    <MESSAGE value="cambios" />
+    <option name="LAST_COMMIT_MESSAGE" value="cambios" />
   </component>
 </project>
