@@ -253,5 +253,10 @@ public class animal {
     public void registrarAlimentacion(String alimento) {
         System.out.println("El animal " + nombre + " ha sido alimentado con " + alimento);
     }
+
+    //metodo para registrar la reproducción
+    public void registrarReproduccion(String pareja) {
+        System.out.println("El animal " + nombre + " ha tenido una relación con " + pareja);
+    }
 }
 
