@@ -44,11 +44,11 @@ public class ave extends animal {
     }
 
     public String getTipo_aviario() {
-        return tipo_aviario;
+        return tipodeave;
     }
 
     public void setTipo_aviario(String tipo_aviario) {
-        this.tipo_aviario = tipo_aviario;
+        this.tipodeave = tipo_aviario;
     }
 
 }
