@@ -15,13 +15,22 @@ public class acuatico extends animal {ç
         this.tipodeagua = tipodeagua;
     }
 
-        public boolean isAletas() {
+    public boolean isAletas() {
             return aletas;
         }
 
         public void setAletas(boolean aletas) {
             this.aletas = aletas;
         }
+
+    public boolean isBranquias() {
+        return branquias;
+    }
+
+    public void setBranquias(boolean branquias) {
+        this.branquias = branquias;
+    }
+
 
 
 }
