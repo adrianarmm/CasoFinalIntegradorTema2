@@ -269,5 +269,9 @@ public class animal {
         System.out.println("El animal " + nombre + " ha sido diagnosticado con " + enfermedad);
     }
 
+    //metodo para registrar las vacunas
+    public void registrarVacunas(String vacuna) {
+        System.out.println("El animal " + nombre + " ha sido vacunado con " + vacuna);
+    }
 }
 
