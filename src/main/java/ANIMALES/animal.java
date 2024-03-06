@@ -170,6 +170,54 @@ public class animal {
         this.alimentacion = alimentacion;
     }
 
+    public String getReproduccion() {
+        return reproduccion;
+    }
+
+
+    public void setReproduccion(String reproduccion) {
+        this.reproduccion = reproduccion;
+    }
+
+
+    public String getCuidados() {
+        return cuidados;
+    }
+
+
+    public void setCuidados(String cuidados) {
+        this.cuidados = cuidados;
+    }
+
+
+    public String getEnfermedades() {
+        return enfermedades;
+    }
+
+
+    public void setEnfermedades(String enfermedades) {
+        this.enfermedades = enfermedades;
+    }
+
+
+    public String getVacunas() {
+        return vacunas;
+    }
+
+
+    public void setVacunas(String vacunas) {
+        this.vacunas = vacunas;
+    }
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
 
 }
 
