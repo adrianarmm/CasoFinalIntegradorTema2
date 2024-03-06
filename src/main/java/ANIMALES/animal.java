@@ -286,5 +286,9 @@ public class animal {
     public void registrarAltura(String altura) {
         System.out.println("El animal " + nombre + " ha sido medido y su altura es " + altura);
     }
+    //metodo para registrar la edad
+    public void registrarEdad(String edad) {
+        System.out.println("El animal " + nombre + " ha sido medido y su edad es " + edad);
+    }
 }
 
