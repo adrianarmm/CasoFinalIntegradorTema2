@@ -273,5 +273,9 @@ public class animal {
     public void registrarVacunas(String vacuna) {
         System.out.println("El animal " + nombre + " ha sido vacunado con " + vacuna);
     }
+    //metodo para registrar el habitat
+    public void registrarHabitat(String habitat) {
+        System.out.println("El animal " + nombre + " ha sido trasladado a " + habitat);
+    }
 }
 
