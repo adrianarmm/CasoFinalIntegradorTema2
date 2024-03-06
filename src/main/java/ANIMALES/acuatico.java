@@ -31,6 +31,14 @@ public class acuatico extends animal {ç
         this.branquias = branquias;
     }
 
+    public boolean isEscamas() {
+        return escamas;
+    }
+
+    public void setEscamas(boolean escamas) {
+        this.escamas = escamas;
+    }
+
 
 
 }
