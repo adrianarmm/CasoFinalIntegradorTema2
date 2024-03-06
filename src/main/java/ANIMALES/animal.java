@@ -131,6 +131,45 @@ public class animal {
         this.peso = peso;
     }
 
+    public String getAltura() {
+        return altura;
+    }
+
+
+    public void setAltura(String altura) {
+        this.altura = altura;
+    }
+
+
+    public String getTipo() {
+        return tipo;
+    }
+
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+
+    public String getHabitat() {
+        return habitat;
+    }
+
+
+    public void setHabitat(String habitat) {
+        this.habitat = habitat;
+    }
+
+
+    public String getAlimentacion() {
+        return alimentacion;
+    }
+
+
+    public void setAlimentacion(String alimentacion) {
+        this.alimentacion = alimentacion;
+    }
+
 
 }
 
