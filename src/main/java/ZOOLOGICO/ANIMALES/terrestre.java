@@ -1,6 +1,8 @@
 package ZOOLOGICO.ANIMALES;
 
-public class terrestre extends animal{
+import ZOOLOGICO.ANIMALES.animal;
+
+public class terrestre extends animal {
 
     boolean patas;
     boolean cola;

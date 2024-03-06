@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5db1ac8a-ea94-437a-84bb-e710ea8f005c" name="Changes" comment="Mostrar información del león" />
+    <list default="true" id="5db1ac8a-ea94-437a-84bb-e710ea8f005c" name="Changes" comment="PACKAGE ANIMALES + HABITATS INTRODUCIDO">
+      <change beforePath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/ANIMALES/HABITATS/HABITATS/habitats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/HABITATS/habitats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/ANIMALES/ave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/ANIMALES/ave.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/ANIMALES/terrestre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/ANIMALES/terrestre.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +38,7 @@
     "Application.MAINANIMALES.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "openjdk-21",
     "kotlin-language-version-configured": "true",
@@ -48,6 +53,7 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java" />
+      <recent name="$PROJECT_DIR$/src/main/java/ANIMALES" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -65,71 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1709717493665</updated>
-      <workItem from="1709717494919" duration="2727000" />
-    </task>
-    <task id="LOCAL-00013" summary="+ uso de if y else">
-      <option name="closed" value="true" />
-      <created>1709718335816</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1709718335816</updated>
-    </task>
-    <task id="LOCAL-00014" summary="metodo para registrar la alimentación">
-      <option name="closed" value="true" />
-      <created>1709718350405</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1709718350405</updated>
-    </task>
-    <task id="LOCAL-00015" summary="metodo para registrar la reproducción">
-      <option name="closed" value="true" />
-      <created>1709718368360</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1709718368360</updated>
-    </task>
-    <task id="LOCAL-00016" summary="metodo para registrar los cuidados">
-      <option name="closed" value="true" />
-      <created>1709718396279</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1709718396279</updated>
-    </task>
-    <task id="LOCAL-00017" summary="metodo para registrar las enfermedades">
-      <option name="closed" value="true" />
-      <created>1709718420634</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1709718420634</updated>
-    </task>
-    <task id="LOCAL-00018" summary="metodo para registrar las vacunass">
-      <option name="closed" value="true" />
-      <created>1709718435491</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1709718435491</updated>
-    </task>
-    <task id="LOCAL-00019" summary="metodo para registrar el habitat">
-      <option name="closed" value="true" />
-      <created>1709718450028</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1709718450028</updated>
-    </task>
-    <task id="LOCAL-00020" summary="metodo para registrar el peso">
-      <option name="closed" value="true" />
-      <created>1709718467013</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1709718467013</updated>
+      <workItem from="1709717494919" duration="3745000" />
     </task>
     <task id="LOCAL-00021" summary="metodo para registrar la altura">
       <option name="closed" value="true" />
@@ -459,20 +401,77 @@
       <option name="project" value="LOCAL" />
       <updated>1709720198784</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="creacion carpeta habitats">
+      <option name="closed" value="true" />
+      <created>1709720300159</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1709720300159</updated>
+    </task>
+    <task id="LOCAL-00063" summary="creacion carpeta habitats + class habitats">
+      <option name="closed" value="true" />
+      <created>1709720385767</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1709720385767</updated>
+    </task>
+    <task id="LOCAL-00064" summary="utilizo floats">
+      <option name="closed" value="true" />
+      <created>1709720405165</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1709720405165</updated>
+    </task>
+    <task id="LOCAL-00065" summary="creacion de public">
+      <option name="closed" value="true" />
+      <created>1709720456335</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1709720456335</updated>
+    </task>
+    <task id="LOCAL-00066" summary="arreglos">
+      <option name="closed" value="true" />
+      <created>1709720478224</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1709720478224</updated>
+    </task>
+    <task id="LOCAL-00067" summary="utilizo overrides">
+      <option name="closed" value="true" />
+      <created>1709720667919</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1709720667919</updated>
+    </task>
+    <task id="LOCAL-00068" summary="PACKAGE ANIMALES INTRODUCIDO">
+      <option name="closed" value="true" />
+      <created>1709720930314</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1709720930314</updated>
+    </task>
+    <task id="LOCAL-00069" summary="PACKAGE ANIMALES + HABITATS INTRODUCIDO">
+      <option name="closed" value="true" />
+      <created>1709721126531</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1709721126532</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="metodo para registrar la salud" />
-    <MESSAGE value="metodo para registrar el comportamiento" />
-    <MESSAGE value="creacion acuatico" />
-    <MESSAGE value="creacion acuatico extends animal" />
-    <MESSAGE value="uso boolean y string" />
-    <MESSAGE value="cambio" />
-    <MESSAGE value="creacion public acuatico" />
     <MESSAGE value="implento public booleans" />
     <MESSAGE value="implento booleans y void, junto con is + set" />
     <MESSAGE value="creacion ave extends" />
@@ -483,7 +482,6 @@
     <MESSAGE value="implemento booleans y string" />
     <MESSAGE value="creacion public terrestre" />
     <MESSAGE value="implemento boolean con is + void y sets" />
-    <MESSAGE value="arreglos" />
     <MESSAGE value="creacion temporal de un main de animales para ver si empieza a funcionar el codigo proporcionado" />
     <MESSAGE value="creacion static void main" />
     <MESSAGE value="Mostrar información del delfín" />
@@ -491,6 +489,14 @@
     <MESSAGE value="Mostrar información del águila" />
     <MESSAGE value="Crear instancia de un animal terrestre" />
     <MESSAGE value="Mostrar información del león" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mostrar información del león" />
+    <MESSAGE value="creacion carpeta habitats" />
+    <MESSAGE value="creacion carpeta habitats + class habitats" />
+    <MESSAGE value="utilizo floats" />
+    <MESSAGE value="creacion de public" />
+    <MESSAGE value="arreglos" />
+    <MESSAGE value="utilizo overrides" />
+    <MESSAGE value="PACKAGE ANIMALES INTRODUCIDO" />
+    <MESSAGE value="PACKAGE ANIMALES + HABITATS INTRODUCIDO" />
+    <option name="LAST_COMMIT_MESSAGE" value="PACKAGE ANIMALES + HABITATS INTRODUCIDO" />
   </component>
 </project>

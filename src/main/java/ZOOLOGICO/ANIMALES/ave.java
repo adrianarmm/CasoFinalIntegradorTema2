@@ -1,5 +1,7 @@
 package ZOOLOGICO.ANIMALES;
 
+import ZOOLOGICO.ANIMALES.animal;
+
 public class ave extends animal {
 
     boolean vuela;
