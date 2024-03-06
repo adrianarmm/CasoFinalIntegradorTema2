@@ -42,5 +42,15 @@ public class animal {
         this.comportamiento = comportamiento;
     }
 
+    @Override
+    public String toString() {
+        return "animal []";
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        // TODO Auto-generated method stub
+        return super.clone();
+    }
 }
 
