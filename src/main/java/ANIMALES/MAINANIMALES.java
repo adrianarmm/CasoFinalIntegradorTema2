@@ -18,4 +18,9 @@ public class MAINANIMALES {
         delfin.buenasalud(true);
         delfin.registrarAlimentacion("Peces");
 
+        // Crear instancia de un animal ave
+        ave aguila = new ave("Águila", "Ave", "Águila real", "Café", "Hembra", "5 años",
+                "5 kg", "1 m", "Ave", "Montañas", "Pequeños mamíferos y aves", "Ovíparo", "Volar a grandes alturas",
+                "Gripe aviar", "Vacuna contra la gripe aviar", 2, true, true, true, true, true, "Aire");
+
     }
