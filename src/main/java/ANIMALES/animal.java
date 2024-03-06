@@ -235,5 +235,13 @@ public class animal {
         this.comportamiento = comportamiento;
     }
 
+    public void buenasalud(boolean salud) {
+        if (salud == true)
+            System.out.println("El animal " + nombre + " se encuentra en buen estado de salud");
+        else
+            System.out.println("El animal " + nombre + " se encuentra en mal estado de salud");
+    }
+
+
 }
 
