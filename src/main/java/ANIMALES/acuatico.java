@@ -1,6 +1,6 @@
 package ANIMALES;
 
-public class acuatico extends animal {ç
+public class acuatico extends animal {
 
     boolean aletas;
     boolean branquias;
