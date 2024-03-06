@@ -242,6 +242,11 @@ public class animal {
             System.out.println("El animal " + nombre + " se encuentra en mal estado de salud");
     }
 
-
+    public void buencomportamiento(boolean comportamiento) {
+        if (comportamiento == true)
+            System.out.println("El animal " + nombre + " se encuentra en buen estado de comportamiento");
+        else
+            System.out.println("El animal " + nombre + " se encuentra en mal estado de comportamiento");
+    }
 }
 
