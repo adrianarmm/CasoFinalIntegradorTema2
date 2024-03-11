@@ -1,31 +1,33 @@
 package ZOOLOGICO.RECURSOS;
 
 public class Prueba {
-        public static void main(String[] args) {
-            AdministracionRecursos adminRecursos = new AdministracionRecursos();
+    public static void main(String[] args) {
+        // Creación de la instancia de AdministracionRecursos para gestionar el inventario
+        AdministracionRecursos adminRecursos = new AdministracionRecursos();
 
-            // Agregando recursos al inventario
-            adminRecursos.agregarRecurso(new Recurso("Alimento para elefantes", 100));
-            adminRecursos.agregarRecurso(new Recurso("Vitaminas para aves", 50));
+        // Agregando recursos al inventario
+        adminRecursos.agregarRecurso(new Recurso("Alimento para elefantes", 100));
+        adminRecursos.agregarRecurso(new Recurso("Vitaminas para aves", 50));
 
-            // Mostrando el inventario
-            System.out.println("Inventario actual:");
-            adminRecursos.mostrarInventario();
+        // Mostrando el estado actual del inventario
+        System.out.println("Inventario actual:");
+        adminRecursos.mostrarInventario();
 
-            // Creando y mostrando un pedido
-            Pedido pedido = new Pedido();
-            pedido.agregarItem(new Recurso("Juguetes para monos", 20));
-            System.out.println("\nPedido realizado:");
-            pedido.mostrarPedido();
+        // Creación de un nuevo pedido y agregando items al mismo
+        Pedido pedido = new Pedido();
+        pedido.agregarItem(new Recurso("Juguetes para monos", 20));
 
-            // Agregando el pedido al inventario
-            for (Recurso item : pedido.getItems()) {
-                adminRecursos.agregarRecurso(item);
-            }
+        // Mostrando los detalles del pedido realizado
+        System.out.println("\nPedido realizado:");
+        pedido.mostrarPedido();
 
-            // Inventario después del pedido
-            System.out.println("\nInventario después del pedido:");
-            adminRecursos.mostrarInventario();
+        // Agregando los items del pedido al inventario
+        for (Recurso item : pedido.getItems()) {
+            adminRecursos.agregarRecurso(item);
         }
-    }
 
+        // Mostrando el inventario después de procesar el pedido
+        System.out.println("\nInventario después del pedido:");
+        adminRecursos.mostrarInventario();
+    }
+}
