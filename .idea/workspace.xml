@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5db1ac8a-ea94-437a-84bb-e710ea8f005c" name="Changes" comment="cambios">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/HABITATS/ave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/HABITATS/ave.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/VISITANTES/MAIN.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/VISITANTES/TourAves.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/VISITANTES/TourMamiferos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/VISITANTES/tour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/VISITANTES/tour.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +36,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.MAIN.executor": "Run",
     "Application.MAINANIMALES.executor": "Run",
     "Application.MAINHABITATS.executor": "Run",
     "Application.Main.executor": "Run",
@@ -71,119 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1709717493665</updated>
-      <workItem from="1709717494919" duration="4949000" />
-    </task>
-    <task id="LOCAL-00036" summary="implento public booleans">
-      <option name="closed" value="true" />
-      <created>1709719184796</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1709719184796</updated>
-    </task>
-    <task id="LOCAL-00037" summary="arreglos">
-      <option name="closed" value="true" />
-      <created>1709719227058</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1709719227058</updated>
-    </task>
-    <task id="LOCAL-00038" summary="implento booleans y void, junto con is + set">
-      <option name="closed" value="true" />
-      <created>1709719268634</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1709719268634</updated>
-    </task>
-    <task id="LOCAL-00039" summary="implento booleans y void, junto con is + set">
-      <option name="closed" value="true" />
-      <created>1709719291572</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1709719291572</updated>
-    </task>
-    <task id="LOCAL-00040" summary="implento booleans y void, junto con is + set">
-      <option name="closed" value="true" />
-      <created>1709719307069</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1709719307069</updated>
-    </task>
-    <task id="LOCAL-00041" summary="implento booleans y void, junto con is + set">
-      <option name="closed" value="true" />
-      <created>1709719322026</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1709719322026</updated>
-    </task>
-    <task id="LOCAL-00042" summary="arreglos">
-      <option name="closed" value="true" />
-      <created>1709719331592</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1709719331592</updated>
-    </task>
-    <task id="LOCAL-00043" summary="creacion ave extends">
-      <option name="closed" value="true" />
-      <created>1709719453186</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1709719453186</updated>
-    </task>
-    <task id="LOCAL-00044" summary="uso de booleans y string">
-      <option name="closed" value="true" />
-      <created>1709719497884</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1709719497884</updated>
-    </task>
-    <task id="LOCAL-00045" summary="creacion public ave">
-      <option name="closed" value="true" />
-      <created>1709719566337</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1709719566337</updated>
-    </task>
-    <task id="LOCAL-00046" summary="implementacion de boolean e is + void y set">
-      <option name="closed" value="true" />
-      <created>1709719629025</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1709719629025</updated>
-    </task>
-    <task id="LOCAL-00047" summary="arreglos">
-      <option name="closed" value="true" />
-      <created>1709719650187</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1709719650187</updated>
-    </task>
-    <task id="LOCAL-00048" summary="arreglos">
-      <option name="closed" value="true" />
-      <created>1709719663340</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1709719663340</updated>
-    </task>
-    <task id="LOCAL-00049" summary="creacion public class terrestre">
-      <option name="closed" value="true" />
-      <created>1709719788485</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1709719788485</updated>
+      <workItem from="1709717494919" duration="7989000" />
     </task>
     <task id="LOCAL-00050" summary="implemento booleans y string">
       <option name="closed" value="true" />
@@ -465,7 +357,119 @@
       <option name="project" value="LOCAL" />
       <updated>1709722384066</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="cambios">
+      <option name="closed" value="true" />
+      <created>1709722454236</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1709722454236</updated>
+    </task>
+    <task id="LOCAL-00086" summary="cambios">
+      <option name="closed" value="true" />
+      <created>1709722691746</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1709722691746</updated>
+    </task>
+    <task id="LOCAL-00087" summary="nueva clase tour">
+      <option name="closed" value="true" />
+      <created>1710180637004</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1710180637005</updated>
+    </task>
+    <task id="LOCAL-00088" summary="personalizar tours">
+      <option name="closed" value="true" />
+      <created>1710180674312</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1710180674312</updated>
+    </task>
+    <task id="LOCAL-00089" summary="cambios">
+      <option name="closed" value="true" />
+      <created>1710180694170</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1710180694170</updated>
+    </task>
+    <task id="LOCAL-00090" summary="implementar clases concretas tours">
+      <option name="closed" value="true" />
+      <created>1710180738859</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1710180738859</updated>
+    </task>
+    <task id="LOCAL-00091" summary="cambios">
+      <option name="closed" value="true" />
+      <created>1710180822513</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1710180822513</updated>
+    </task>
+    <task id="LOCAL-00092" summary="creando mas">
+      <option name="closed" value="true" />
+      <created>1710180863668</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1710180863668</updated>
+    </task>
+    <task id="LOCAL-00093" summary="creando mas">
+      <option name="closed" value="true" />
+      <created>1710180879264</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1710180879264</updated>
+    </task>
+    <task id="LOCAL-00094" summary="creando mas">
+      <option name="closed" value="true" />
+      <created>1710180889800</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1710180889800</updated>
+    </task>
+    <task id="LOCAL-00095" summary="cmabios">
+      <option name="closed" value="true" />
+      <created>1710180915385</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1710180915385</updated>
+    </task>
+    <task id="LOCAL-00096" summary="clase QuioscoInteractivo">
+      <option name="closed" value="true" />
+      <created>1710181005884</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1710181005884</updated>
+    </task>
+    <task id="LOCAL-00097" summary="creando QuioscoInteractivo">
+      <option name="closed" value="true" />
+      <created>1710181026592</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1710181026592</updated>
+    </task>
+    <task id="LOCAL-00098" summary="cambios">
+      <option name="closed" value="true" />
+      <created>1710181081151</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1710181081151</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -483,13 +487,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="creacion public class terrestre" />
-    <MESSAGE value="implemento booleans y string" />
-    <MESSAGE value="creacion public terrestre" />
-    <MESSAGE value="implemento boolean con is + void y sets" />
-    <MESSAGE value="creacion temporal de un main de animales para ver si empieza a funcionar el codigo proporcionado" />
-    <MESSAGE value="creacion static void main" />
-    <MESSAGE value="Mostrar información del delfín" />
     <MESSAGE value="Crear instancia de un animal ave" />
     <MESSAGE value="Mostrar información del águila" />
     <MESSAGE value="Crear instancia de un animal terrestre" />
@@ -507,6 +504,13 @@
     <MESSAGE value="creo un main temporal de habitats" />
     <MESSAGE value="arreglos" />
     <MESSAGE value="arreglos MAINHABITATS" />
+    <MESSAGE value="nueva clase tour" />
+    <MESSAGE value="personalizar tours" />
+    <MESSAGE value="implementar clases concretas tours" />
+    <MESSAGE value="creando mas" />
+    <MESSAGE value="cmabios" />
+    <MESSAGE value="clase QuioscoInteractivo" />
+    <MESSAGE value="creando QuioscoInteractivo" />
     <MESSAGE value="cambios" />
     <option name="LAST_COMMIT_MESSAGE" value="cambios" />
   </component>
