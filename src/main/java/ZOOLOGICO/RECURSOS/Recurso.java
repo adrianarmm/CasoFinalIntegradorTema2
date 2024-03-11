@@ -34,4 +34,5 @@ public class Recurso {public class Recurso {
                 ", cantidad=" + cantidad +
                 '}';
     }
+}
 
