@@ -1,11 +1,24 @@
-
-package ZOOLOGICO;
-
 import ZOOLOGICO.ANIMALES.animal;
 import ZOOLOGICO.ANIMALES.acuatico;
 import ZOOLOGICO.ANIMALES.ave;
 import ZOOLOGICO.ANIMALES.terrestre;
-
+import ZOOLOGICO.HABITATS.habitats;
+import ZOOLOGICO.HABITATS.ave as HabitatAve;
+import ZOOLOGICO.HABITATS.acuaticos as HabitatAcuaticos;
+import ZOOLOGICO.HABITATS.terrestres as HabitatTerrestres;
+import ZOOLOGICO.VISITANTES.Tour;
+import ZOOLOGICO.VISITANTES.TourAves;
+import ZOOLOGICO.VISITANTES.TourMamiferos;
+import ZOOLOGICO.VISITANTES.TourNiños;
+import ZOOLOGICO.VISITANTES.QuioscoInteractivo;
+import ZOOLOGICO.MANTENIMIENTO.Camara;
+import ZOOLOGICO.MANTENIMIENTO.SensorMovimiento;
+import ZOOLOGICO.MANTENIMIENTO.GestorMantenimiento;
+import ZOOLOGICO.MANTENIMIENTO.TareaMantenimiento;
+import ZOOLOGICO.RECURSOS.AdministracionRecursos;
+import ZOOLOGICO.RECURSOS.Pedido;
+import ZOOLOGICO.RECURSOS.Proveedor;
+import ZOOLOGICO.RECURSOS.Recurso;
 
 import java.util.Scanner;
 
@@ -14,607 +27,560 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Animal-related options
-        System.out.println("1. Create an animal");
-        System.out.println("2. Create an aquatic animal");
-        System.out.println("3. Create a bird");
-        System.out.println("4. Create a terrestrial animal");
-        System.out.println("5. Perform animal actions");
-        System.out.println("6. Exit");
+        // Opciones relacionadas con los animales
+        System.out.println("1. Crear un animal");
+        System.out.println("2. Crear un animal acuático");
+        System.out.println("3. Crear un ave");
+        System.out.println("4. Crear un animal terrestre");
+        System.out.println("5. Realizar acciones de animales");
+        System.out.println("6. Salir");
 
-        int choice = scanner.nextInt();
-        switch (choice) {
+        int eleccion = scanner.nextInt();
+        switch (eleccion) {
             case 1:
-                // Create an animal
-                System.out.println("Enter the animal's name:");
-                String animalName = scanner.next();
-                animal animal = new animal(animalName, "", "", "", "", "", "", "", "", "", "", "", "", "", "", 0, true, true);
-                System.out.println("Animal created: " + animal);
+                // Crear un animal
+                System.out.println("Ingresa el nombre del animal:");
+                String nombreAnimal = scanner.next();
+                animal animal = new animal(nombreAnimal, "", "", "", "", "", "", "", "", "", "", "", "", "", "", 0, true, true);
+                System.out.println("Animal creado: " + animal);
                 break;
             case 2:
-                // Create an aquatic animal
-                System.out.println("Enter the aquatic animal's name:");
-                String aquaticAnimalName = scanner.next();
+                // Crear un animal acuático
+                System.out.println("Ingresa el nombre del animal acuático:");
+                String nombreAnimalAcuatico = scanner.next();
                 boolean aletas, branquias, escamas;
-                String tipodeagua;
-                System.out.println("Enter aletas (true/false):");
+                String tipoDeAgua;
+                System.out.println("Ingresa aletas (verdadero/falso):");
                 aletas = scanner.nextBoolean();
-                System.out.println("Enter branquias (true/false):");
+                System.out.println("Ingresa branquias (verdadero/falso):");
                 branquias = scanner.nextBoolean();
-                System.out.println("Enter escamas (true/false):");
+                System.out.println("Ingresa escamas (verdadero/falso):");
                 escamas = scanner.nextBoolean();
-                System.out.println("Enter the type of water (fresh/salt):");
-                tipodeagua = scanner.next();
-                acuatico aquaticAnimal = new acuatico(aquaticAnimalName, "", "", "", "", "", "", "", "", "", "", "", "", "", "", 0, true, true, aletas, branquias, escamas, tipodeagua);
-                System.out.println("Aquatic animal created: " + aquaticAnimal);
+                System.out.println("Ingresa el tipo de agua (dulce/salada):");
+                tipoDeAgua = scanner.next();
+                acuatico animalAcuatico = new acuatico(nombreAnimalAcuatico, "", "", "", "", "", "", "", "", "", "", "", "", "", "", 0, true, true, aletas, branquias, escamas, tipoDeAgua);
+                System.out.println("Animal acuático creado: " + animalAcuatico);
                 break;
             case 3:
-                // Create a bird
-                System.out.println("Enter the bird's name:");String birdName = scanner.next();
+                // Crear un ave
+                System.out.println("Ingresa el nombre del ave:");
+                String nombreAve = scanner.next();
                 boolean vuela, pico, plumaje;
-                String tipodeave;
-                System.out.println("Enter vuela (true/false):");
+                String tipoDeAve;
+                System.out.println("Ingresa vuela (verdadero/falso):");
                 vuela = scanner.nextBoolean();
-                System.out.println("Enter pico (true/false):");
+                System.out.println("Ingresa pico (verdadero/falso):");
                 pico = scanner.nextBoolean();
-                System.out.println("Enter plumaje (true/false):");
+                System.out.println("Ingresa plumaje (verdadero/falso):");
                 plumaje = scanner.nextBoolean();
-                System.out.println("Enter the type of aviario (cage/aviary):");
-                tipodeave = scanner.next();
-                ave bird = new ave(birdName, "", "", "", "", "", "", "", "", "", "", "", "", "", "", 0, true, true, vuela, pico, plumaje, tipodeave);
-                System.out.println("Bird created: " + bird);
+                System.out.println("Ingresa el tipo de aviario (jaula/aviario):");
+                tipoDeAve = scanner.next();
+                ave ave = new ave(nombreAve, "", "", "", "", "", "", "", "", "", "", "", "", "", "", 0, true, true, vuela, pico, plumaje, tipoDeAve);
+                System.out.println("Ave creada: " + ave);
                 break;
             case 4:
-                // Create a terrestrial animal
-                System.out.println("Enter the terrestrial animal's name:");
-                String terrestrialAnimalName = scanner.next();
+                // Crear un animal terrestre
+                System.out.println("Ingresa el nombre del animal terrestre:");
+                String nombreAnimalTerrestre = scanner.next();
                 boolean patas, cola, pelaje;
-                String tipo_terrestre;
-                System.out.println("Enter patas (true/false):");
+                String tipoTerrestre;
+                System.out.println("Ingresa patas (verdadero/falso):");
                 patas = scanner.nextBoolean();
-                System.out.println("Enter cola (true/false):");
+                System.out.println("Ingresa cola (verdadero/falso):");
                 cola = scanner.nextBoolean();
-                System.out.println("Enter pelaje (true/false):");
+                System.out.println("Ingresa pelaje (verdadero/falso):");
                 pelaje = scanner.nextBoolean();
-                System.out.println("Enter the type of terrestrial (forest/savannah):");
-                tipo_terrestre = scanner.next();
-                terrestre terrestrialAnimal = new terrestre(terrestrialAnimalName, "", "", "", "", "", "", "", "", "", "", "", "", "", "", 0, true, true, patas, cola, pelaje, tipo_terrestre);
-                System.out.println("Terrestrial animal created: " + terrestrialAnimal);
+                System.out.println("Ingresa el tipo de terreno (bosque/sabana):");
+                tipoTerrestre = scanner.next();
+                terrestre animalTerrestre = new terrestre(nombreAnimalTerrestre, "", "", "", "", "", "", "", "", "", "", "", "", "", "", 0, true, true, patas, cola, pelaje, tipoTerrestre);
+                System.out.println("Animal terrestre creado: " + animalTerrestre);
                 break;
             case 5:
-                // Perform animal actions
-                System.out.println("1. Register alimentation");
-                System.out.println("2. Register reproduction");
-                System.out.println("3. Register cuidados");
-                System.out.println("4. Register enfermedades");
-                System.out.println("5. Register vacunas");
-                System.out.println("6. Register habitat");
-                System.out.println("7. Register peso");
-                System.out.println("8. Register altura");
-                System.out.println("9. Register edad");
-                System.out.println("10. Register color");
-                System.out.println("11. Register raza");
-                System.out.println("12. Register especie");
-                System.out.println("13. Register nombre");
-                System.out.println("14. Register sexo");
-                System.out.println("15. Register tipo");
-                System.out.println("16. Register id");
-                System.out.println("17. Register salud");
-                System.out.println("18. Register comportamiento");
-                System.out.println("19. Exit");
+                // Realizar acciones de animales
+                System.out.println("1. Registrar alimentación");
+                System.out.println("2. Registrar reproducción");
+                System.out.println("3. Registrar cuidados");
+                System.out.println("4. Registrar enfermedades");
+                System.out.println("5. Registrar vacunas");
+                System.out.println("6. Registrar hábitat");
+                System.out.println("7. Registrar peso");
+                System.out.println("8. Registrar altura");
+                System.out.println("9. Registrar edad");
+                System.out.println("10. Registrar color");
+                System.out.println("11. Registrar raza");
+                System.out.println("12. Registrar especie");
+                System.out.println("13. Registrar nombre");
+                System.out.println("14. Registrar sexo");
+                System.out.println("15. Registrar tipo");
+                System.out.println("16. Registrar ID");
+                System.out.println("17. Registrar salud");
+                System.out.println("18. Registrar comportamiento");
+                System.out.println("19. Salir");
 
-                int animalActionChoice = scanner.nextInt();
-                switch (animalActionChoice) {
+                int eleccionAccionAnimal = scanner.nextInt();
+                switch (eleccionAccionAnimal) {
                     case 1:
-                        // Register alimentation
-                        System.out.println("Enter the animal's name:");
-                        String animalForAlimentation = scanner.next();
-                        System.out.println("Enter the alimentation:");
+                        // Registrar alimentación
+                        System.out.println("Ingresa el nombre del animal:");
+                        String animalParaAlimentacion = scanner.next();
+                        System.out.println("Ingresa la alimentación:");
                         String alimentacion = scanner.next();
-                        // Find the animal and register the alimentation
+                        // Encontrar el animal y registrar la alimentación
                         break;
                     case 2:
-                        // Register reproduction
-                        System.out.println("Enter the animal's name:");
-                        String animalForReproduction = scanner.next();
-                        System.out.println("Enter the reproduction:");
+                        // Registrar reproducción
+                        System.out.println("Ingresa el nombre del animal:");
+                        String animalParaReproduccion = scanner.next();
+                        System.out.println("Ingresa la reproducción:");
                         String reproduccion = scanner.next();
-                        // Find the animal and register the reproduction
+                        // Encontrar el animal y registrar la reproducción
                         break;
                     case 3:
-                        // Register cuidados
-                        System.out.println("Enter the animal's name:");
-                        String animalForCuidados = scanner.next();
-                        System.out.println("Enter the cuidados:");
+                        // Registrar cuidados
+                        System.out.println("Ingresa el nombre del animal:");
+                        String animalParaCuidados = scanner.next();
+                        System.out.println("Ingresa los cuidados:");
                         String cuidados = scanner.next();
-                        // Find the animal and register the cuidados
+                        // Encontrar el animal y registrar los cuidados
                         break;
                     case 4:
-                        // Register enfermedades
-                        System.out.println("Enter the animal's name:");
-                        String animalForEnfermedades = scanner.next();
-                        System.out.println("Enter the enfermedades:");
+                        // Registrar enfermedades
+                        System.out.println("Ingresa el nombre del animal:");
+                        String animalParaEnfermedades = scanner.next();
+                        System.out.println("Ingresa las enfermedades:");
                         String enfermedades = scanner.next();
-                        // Find the animal and register the enfermedades
+                        // Encontrar el animal y registrar las enfermedades
                         break;
                     case 5:
-                        // Register vacunas
-                        System.out.println("Enter the animal's name:");
-                        String animalForVacunas = scanner.next();
-                        System.out.println("Enter the vacunas:");
+                        // Registrar vacunas
+                        System.out.println("Ingresa el nombre del animal:");
+                        String animalParaVacunas = scanner.next();
+                        System.out.println("Ingresa las vacunas:");
                         String vacunas = scanner.next();
-                        // Find the animal and register the vacunas
+                        // Encontrar el animal y registrar las vacunas
                         break;
                     case 6:
-                        // Register habitat
-                        System.out.println("Enter the animal's name:");
-                        String animalForHabitat = scanner.next();
-                        System.out.println("Enter the habitat:");
+                        // Registrar hábitat
+                        System.out.println("Ingresa el nombre del animal:");
+                        String animalParaHabitat = scanner.next();
+                        System.out.println("Ingresa el hábitat:");
                         String habitat = scanner.next();
-                        // Find the animal and register the habitat
+                        // Encontrar el animal y registrar el hábitat
                         break;
                     case 7:
-                        // Register peso
-                        System.out.println("Enter the animal's name:");
-                        String animalForPeso = scanner.next();
-                        System.out.println("Enter the peso:");
+                        // Registrar peso
+                        System.out.println("Ingresa el nombre del animal:");
+                        String animalParaPeso = scanner.next();
+                        System.out.println("Ingresa el peso:");
                         String peso = scanner.next();
-                        // Find the animal and register the peso
+                        // Encontrar el animal y registrar el peso
                         break;
                     case 8:
-                        // Register altura
-                        System.out.println("Enter the animal's name:");
-                        String animalForAltura = scanner.next();
-                        System.out.println("Enter the altura:");
+                        // Registrar altura
+                        System.out.println("Ingresa el nombre del animal:");
+                        String animalParaAltura = scanner.next();
+                        System.out.println("Ingresa la altura:");
                         String altura = scanner.next();
-                        // Find the animal and register the altura
+                        // Encontrar el animal y registrar la altura
                         break;
                     case 9:
-                        // Register edad
-                        System.out.println("Enter the animal's name:");
-                        String animalForEdad = scanner.next();
-                        System.out.println("Enter the edad:");
+                        // Registrar edad
+                        System.out.println("Ingresa el nombre del animal:");
+                        String animalParaEdad = scanner.next();
+                        System.out.println("Ingresa la edad:");
                         String edad = scanner.next();
-                        // Find the animal and register the edad
+                        // Encontrar el animal y registrar la edad
                         break;
                     case 10:
-                        // Register color
-                        System.out.println("Enter the animal's name:");
-                        String animalForColor = scanner.next();
-                        System.out.println("Enter the color:");
+                        // Registrar color
+                        System.out.println("Ingresa el nombre del animal:");
+                        String animalParaColor = scanner.next();
+                        System.out.println("Ingresa el color:");
                         String color = scanner.next();
-                        // Find the animal and register the color
+                        // Encontrar el animal y registrar el color
                         break;
                     case 11:
-                        // Register raza
-                        System.out.println("Enter the animal's name:");
-                        String animalForRaza = scanner.next();
-                        System.out.println("Enter the raza:");
+                        // Registrar raza
+                        System.out.println("Ingresa el nombre del animal:");
+                        String animalParaRaza = scanner.next();
+                        System.out.println("Ingresa la raza:");
                         String raza = scanner.next();
-                        // Find the animal and register the raza
+                        // Encontrar el animal y registrar la raza
                         break;
                     case 12:
-                        // Register especie
-                        System.out.println("Enter the animal's name:");
-                        String animalForEspecie = scanner.next();
-                        System.out.println("Enter the especie:");
+                        // Registrar especie
+                        System.out.println("Ingresa el nombre del animal:");
+                        String animalParaEspecie = scanner.next();
+                        System.out.println("Ingresa la especie:");
                         String especie = scanner.next();
-                        // Find the animal and register the especie
+                        // Encontrar el animal y registrar la especie
                         break;
                     case 13:
-                        // Register nombre
-                        System.out.println("Enter the animal's name:");
-                        String animalForNombre = scanner.next();
-                        System.out.println("Enter the nombre:");
+                        // Registrar nombre
+                        System.out.println("Ingresa el nombre actual del animal:");
+                        String animalParaNombre = scanner.next();
+                        System.out.println("Ingresa el nuevo nombre:");
                         String nombre = scanner.next();
-                        // Find the animal and register the nombre
+                        // Encontrar el animal y registrar el nuevo nombre
                         break;
                     case 14:
-                        // Register sexo
-                        System.out.println("Enter the animal's name:");
-                        String animalForSexo = scanner.next();
-                        System.out.println("Enter the sexo:");
+                        // Registrar sexo
+                        System.out.println("Ingresa el nombre del animal:");
+                        String animalParaSexo = scanner.next();
+                        System.out.println("Ingresa el sexo:");
                         String sexo = scanner.next();
-                        // Find the animal and register the sexo
+                        // Encontrar el animal y registrar el sexo
                         break;
                     case 15:
-                        // Register tipo
-                        System.out.println("Enter the animal's name:");
-                        String animalForTipo = scanner.next();
-                        System.out.println("Enter the tipo:");
+                        // Registrar tipo
+                        System.out.println("Ingresa el nombre del animal:");
+                        String animalParaTipo = scanner.next();
+                        System.out.println("Ingresa el tipo:");
                         String tipo = scanner.next();
-                        // Find the animal and register the tipo
+                        // Encontrar el animal y registrar el tipo
                         break;
                     case 16:
-                        // Register id
-                        System.out.println("Enter the animal's name:");
-                        String animalForId = scanner.next();
-                        System.out.println("Enter the id:");
+                        // Registrar ID
+                        System.out.println("Ingresa el nombre del animal:");
+                        String animalParaId = scanner.next();
+                        System.out.println("Ingresa el ID:");
                         int id = scanner.nextInt();
-                        // Find the animal and register the id
+                        // Encontrar el animal y registrar el ID
                         break;
                     case 17:
-                        // Register salud
-                        System.out.println("Enter the animal's name:");
-                        String animalForSalud = scanner.next();
-                        System.out.println("Enter the salud (true/false):");
+                        // Registrar salud
+                        System.out.println("Ingresa el nombre del animal:");
+                        String animalParaSalud = scanner.next();
+                        System.out.println("Ingresa la salud (verdadero/falso):");
                         boolean salud = scanner.nextBoolean();
-                        // Find the animal and register the salud
+                        // Encontrar el animal y registrar la salud
                         break;
                     case 18:
-                        // Register comportamiento
-                        System.out.println("Enter the animal's name:");
-                        String animalForComportamiento = scanner.next();
-                        System.out.println("Enter the comportamiento (true/false):");
+                        // Registrar comportamiento
+                        System.out.println("Ingresa el nombre del animal:");
+                        String animalParaComportamiento = scanner.next();
+                        System.out.println("Ingresa el comportamiento (verdadero/falso):");
                         boolean comportamiento = scanner.nextBoolean();
-                        // Find the animal and register the comportamiento
+                        // Encontrar el animal y registrar el comportamiento
                         break;
                     case 19:
-                        // Exit
+                        // Salir
                         break;
                     default:
-                        System.out.println("Invalid option.");
+                        System.out.println("Opción inválida.");
                 }
                 break;
             case 6:
-                // Exit
+                // Salir
                 break;
             default:
-                System.out.println("Invalid option.");
+                System.out.println("Opción inválida.");
         }
 
-        // Habitat-related options
-        System.out.println("1. Create a habitat");
-        System.out.println("2. Perform habitat actions");
-        System.out.println("3. Exit");
+        // Opciones relacionadas con los hábitats
+        System.out.println("1. Crear un hábitat");
+        System.out.println("2. Realizar acciones en hábitats");
+        System.out.println("3. Salir");
 
-        int habitatChoice = scanner.nextInt();
-        switch (habitatChoice) {
+        int eleccionHabitat = scanner.nextInt();
+        switch (eleccionHabitat) {
             case 1:
-                // Create a habitat
-                System.out.println("1. Create an aviary");
-                System.out.println("2. Create an aquatic habitat");
-                System.out.println("3. Create a terrestrial habitat");
-                System.out.println("4. Exit");
+                // Crear un hábitat
+                System.out.println("1. Crear un aviario");
+                System.out.println("2. Crear un hábitat acuático");
+                System.out.println("3. Crear un hábitat terrestre");
+                System.out.println("4. Salir");
 
-                int createHabitatChoice = scanner.nextInt();
-                switch (createHabitatChoice) {
+                int eleccionCrearHabitat = scanner.nextInt();
+                switch (eleccionCrearHabitat) {
                     case 1:
-                        // Create an aviary
-                        System.out.println("Enter the aviary's temperature:");
-                        float aviaryTemperature = scanner.nextFloat();
-                        System.out.println("Enter the aviary's humedad:");
-                        float aviaryHumedad = scanner.nextFloat();
-                        System.out.println("Enter the aviary's limpieza (true/false):");
-                        boolean aviaryLimpieza = scanner.nextBoolean();
-                        HabitatAve aviary = new HabitatAve(aviaryTemperature, aviaryHumedad, aviaryLimpieza);
-                        System.out.println("Aviary created: " + aviary);
+                        // Crear un aviario
+                        System.out.println("Ingresa la temperatura del aviario:");
+                        float temperaturaAviario = scanner.nextFloat();
+                        System.out.println("Ingresa la humedad del aviario:");
+                        float humedadAviario = scanner.nextFloat();
+                        System.out.println("Ingresa la limpieza del aviario (verdadero/falso):");
+                        boolean limpiezaAviario = scanner.nextBoolean();
+                        HabitatAve aviario = new HabitatAve(temperaturaAviario, humedadAviario, limpiezaAviario);
+                        System.out.println("Aviario creado: " + aviario);
                         break;
                     case 2:
-                        // Create an aquatic habitat
-                        System.out.println("Enter the aquatic habitat's temperature:");
-                        float aquaticHabitatTemperature = scanner.nextFloat();
-                        System.out.println("Enter the aquatic habitat's humedad:");
-                        float aquaticHabitatHumedad = scanner.nextFloat();
-                        System.out.println("Enter the aquatic habitat's limpieza (true/false):");
-                        boolean aquaticHabitatLimpieza = scanner.nextBoolean();
-                        HabitatAcuaticos aquaticHabitat = new HabitatAcuaticos(aquaticHabitatTemperature, aquaticHabitatHumedad, aquaticHabitatLimpieza, true);
-                        System.out.println("Aquatic habitat created: " + aquaticHabitat);
+                        // Crear un hábitat acuático
+                        System.out.println("Ingresa la temperatura del hábitat acuático:");
+                        float temperaturaHabitatAcuatico = scanner.nextFloat();
+                        System.out.println("Ingresa la humedad del hábitat acuático:");
+                        float humedadHabitatAcuatico = scanner.nextFloat();
+                        System.out.println("Ingresa la limpieza del hábitat acuático (verdadero/falso):");
+                        boolean limpiezaHabitatAcuatico = scanner.nextBoolean();
+                        HabitatAcuaticos habitatAcuatico = new HabitatAcuaticos(temperaturaHabitatAcuatico, humedadHabitatAcuatico, limpiezaHabitatAcuatico, true);
+                        System.out.println("Hábitat acuático creado: " + habitatAcuatico);
                         break;
                     case 3:
-                        // Create a terrestrial habitat
-                        System.out.println("Enter the terrestrial habitat's temperature:");
-                        float terrestrialHabitatTemperature = scanner.nextFloat();
-                        System.out.println("Enter the terrestrial habitat's humedad:");
-                        float terrestrialHabitatHumedad = scanner.nextFloat();
-                        System.out.println("Enter the terrestrial habitat's limpieza (true/false):");
-                        boolean terrestrialHabitatLimpieza = scanner.nextBoolean();
-                        HabitatTerrestres terrestrialHabitat = new HabitatTerrestres(terrestrialHabitatTemperature, terrestrialHabitatHumedad, terrestrialHabitatLimpieza, true);
-                        System.out.println("Terrestrial habitat created: " + terrestrialHabitat);
+                        // Crear un hábitat terrestre
+                        System.out.println("Ingresa la temperatura del hábitat terrestre:");
+                        float temperaturaHabitatTerrestre = scanner.nextFloat();
+                        System.out.println("Ingresa la humedad del hábitat terrestre:");
+                        float humedadHabitatTerrestre = scanner.nextFloat();
+                        System.out.println("Ingresa la limpieza del hábitat terrestre (verdadero/falso):");
+                        boolean limpiezaHabitatTerrestre = scanner.nextBoolean();
+                        HabitatTerrestres habitatTerrestre = new HabitatTerrestres(temperaturaHabitatTerrestre, humedadHabitatTerrestre, limpiezaHabitatTerrestre, true);
+                        System.out.println("Hábitat terrestre creado: " + habitatTerrestre);
                         break;
                     case 4:
-                        // Exit
+                        // Salir
                         break;
                     default:
-                        System.out.println("Invalid option.");
+                        System.out.println("Opción inválida.");
                 }
                 break;
             case 2:
-                // Perform habitat actions
-                System.out.println("1. Monitor a habitat");
-                System.out.println("2. Exit");
+                // Realizar acciones en hábitats
+                System.out.println("1. Monitorear un hábitat");
+                System.out.println("2. Salir");
 
-                int habitatActionChoice = scanner.nextInt();
-                switch (habitatActionChoice) {
+                int eleccionAccionHabitat = scanner.nextInt();
+                switch (eleccionAccionHabitat) {
                     case 1:
-                        // Monitor a habitat
-                        System.out.println("1. Monitor an aviary");
-                        System.out.println("2. Monitor an aquatic habitat");
-                        System.out.println("3. Monitor a terrestrial habitat");
-                        System.out.println("4. Exit");
+                        // Monitorear un hábitat
+                        System.out.println("1. Monitorear un aviario");
+                        System.out.println("2. Monitorear un hábitat acuático");
+                        System.out.println("3. Monitorear un hábitat terrestre");
+                        System.out.println("4. Salir");
 
-                        int monitorHabitatChoice = scanner.nextInt();
-                        switch (monitorHabitatChoice) {
+                        int eleccionMonitorearHabitat = scanner.nextInt();
+                        switch (eleccionMonitorearHabitat) {
                             case 1:
-                                // Monitor an aviary
-                                System.out.println("Enter the aviary's temperature:");
-                                float aviaryTemperatureToMonitor = scanner.nextFloat();
-                                System.out.println("Enter the aviary's humedad:");
-                                float aviaryHumedadToMonitor = scanner.nextFloat();
-                                System.out.println("Enter the aviary's limpieza (true/false):");
-                                boolean aviaryLimpiezaToMonitor = scanner.nextBoolean();
-                                HabitatAve aviaryToMonitor = new HabitatAve(aviaryTemperatureToMonitor, aviaryHumedadToMonitor, aviaryLimpiezaToMonitor);
-                                aviaryToMonitor.monitorear();
+                                // Monitorear un aviario
+                                System.out.println("Ingresa la temperatura del aviario:");
+                                float temperaturaAviarioAMonitorear = scanner.nextFloat();
+                                System.out.println("Ingresa la humedad del aviario:");
+                                float humedadAviarioAMonitorear = scanner.nextFloat();
+                                System.out.println("Ingresa la limpieza del aviario (verdadero/falso):");
+                                boolean limpiezaAviarioAMonitorear = scanner.nextBoolean();
+                                HabitatAve aviarioAMonitorear = new HabitatAve(temperaturaAviarioAMonitorear, humedadAviarioAMonitorear, limpiezaAviarioAMonitorear);
+                                aviarioAMonitorear.monitorear();
                                 break;
                             case 2:
-                                // Monitor an aquatic habitat
-                                System.out.println("Enter the aquatic habitat's temperature:");
-                                float aquaticHabitatTemperatureToMonitor = scanner.nextFloat();
-                                System.out.println("Enter the aquatic habitat's humedad:");
-                                float aquaticHabitatHumedadToMonitor = scanner.nextFloat();
-                                System.out.println("Enter the aquatic habitat's limpieza (true/false):");
-                                boolean aquaticHabitatLimpiezaToMonitor = scanner.nextBoolean();
-                                HabitatAcuaticos aquaticHabitatToMonitor = new HabitatAcuaticos(aquaticHabitatTemperatureToMonitor, aquaticHabitatHumedadToMonitor, aquaticHabitatLimpiezaToMonitor, true);
-                                aquaticHabitatToMonitor.monitorear();
+                                // Monitorear un hábitat acuático
+                                System.out.println("Ingresa la temperatura del hábitat acuático:");
+                                float temperaturaHabitatAcuaticoAMonitorear = scanner.nextFloat();
+                                System.out.println("Ingresa la humedad del hábitat acuático:");
+                                float humedadHabitatAcuaticoAMonitorear = scanner.nextFloat();
+                                System.out.println("Ingresa la limpieza del hábitat acuático (verdadero/falso):");
+                                boolean limpiezaHabitatAcuaticoAMonitorear = scanner.nextBoolean();
+                                HabitatAcuaticos habitatAcuaticoAMonitorear = new HabitatAcuaticos(temperaturaHabitatAcuaticoAMonitorear, humedadHabitatAcuaticoAMonitorear, limpiezaHabitatAcuaticoAMonitorear, true);
+                                habitatAcuaticoAMonitorear.monitorear();
                                 break;
                             case 3:
-                                // Monitor a terrestrial habitat
-                                System.out.println("Enter the terrestrial habitat's temperature:");
-                                float terrestrialHabitatTemperatureToMonitor = scanner.nextFloat();
-                                System.out.println("Enter the terrestrial habitat's humedad:");
-                                float terrestrialHabitatHumedadToMonitor = scanner.nextFloat();
-                                System.out.println("Enter the terrestrial habitat's limpieza (true/false):");
-                                boolean terrestrialHabitatLimpiezaToMonitor = scanner.nextBoolean();
-                                HabitatTerrestres terrestrialHabitatToMonitor = new HabitatTerrestres(terrestrialHabitatTemperatureToMonitor, terrestrialHabitatHumedadToMonitor, terrestrialHabitatLimpiezaToMonitor, true);
-                                terrestrialHabitatToMonitor.monitorear();
+                                // Monitorear un hábitat terrestre
+                                System.out.println("Ingresa la temperatura del hábitat terrestre:");
+                                float temperaturaHabitatTerrestreAMonitorear = scanner.nextFloat();
+                                System.out.println("Ingresa la humedad del hábitat terrestre:");
+                                float humedadHabitatTerrestreAMonitorear = scanner.nextFloat();
+                                System.out.println("Ingresa la limpieza del hábitat terrestre (verdadero/falso):");
+                                boolean limpiezaHabitatTerrestreAMonitorear = scanner.nextBoolean();
+                                HabitatTerrestres habitatTerrestreAMonitorear = new HabitatTerrestres(temperaturaHabitatTerrestreAMonitorear, humedadHabitatTerrestreAMonitorear, limpiezaHabitatTerrestreAMonitorear, true);
+                                habitatTerrestreAMonitorear.monitorear();
                                 break;
                             case 4:
-                                // Exit
+                                // Salir
                                 break;
                             default:
-                                System.out.println("Invalid option.");
+                                System.out.println("Opción inválida.");
                         }
                         break;
                     case 2:
-                        // Exit
+                        // Salir
                         break;
                     default:
-                        System.out.println("Invalid option.");
+                        System.out.println("Opción inválida.");
                 }
                 break;
             case 3:
-                // Exit
+                // Salir
                 break;
             default:
-                System.out.println("Invalid option.");
+                System.out.println("Opción inválida.");
         }
 
-        // Visitor-related options
-        System.out.println("1. Create a tour");
-        System.out.println("2. Visit the zoo");
-        System.out.println("3. Exit");
+        // Opciones relacionadas con los visitantes
+        System.out.println("1. Crear un recorrido");
+        System.out.println("2. Visitar el zoológico");
+        System.out.println("3. Salir");
 
-        int visitorChoice = scanner.nextInt();
-        switch (visitorChoice) {
+        int eleccionVisitante = scanner.nextInt();
+        switch (eleccionVisitante) {
             case 1:
-                // Create a tour
-                System.out.println("1. Create a bird tour");
-                System.out.println("2. Create a mammal tour");
-                System.out.println("3. Create a children's tour");
-                System.out.println("4. Exit");
+                // Crear un recorrido
+                System.out.println("1. Crear un recorrido de aves");
+                System.out.println("2. Crear un recorrido de mamíferos");
+                System.out.println("3. Crear un recorrido para niños");
+                System.out.println("4. Salir");
 
-                int createTourChoice = scanner.nextInt();
-                switch (createTourChoice) {
+                int eleccionCrearRecorrido = scanner.nextInt();
+                switch (eleccionCrearRecorrido) {
                     case 1:
-                        // Create a bird tour
-                        TourAves birdTour = new TourAves();
-                        System.out.println("Bird tour created: " + birdTour);
+                        // Crear un recorrido de aves
+                        TourAves recorridoAves = new TourAves();
+                        System.out.println("Recorrido de aves creado: " + recorridoAves);
                         break;
                     case 2:
-                        // Create a mammal tour
-                        TourMamiferos mammalTour = new TourMamiferos();
-                        System.out.println("Mammal tour created: " + mammalTour);
+                        // Crear un recorrido de mamíferos
+                        TourMamiferos recorridoMamiferos = new TourMamiferos();
+                        System.out.println("Recorrido de mamíferos creado: " + recorridoMamiferos);
                         break;
                     case 3:
-                        // Create a children's tour
-                        TourNiños childrenTour = new TourNiños();
-                        System.out.println("Children's tour created: " + childrenTour);
+                        // Crear un recorrido para niños
+                        TourNiños recorridoNiños = new TourNiños();
+                        System.out.println("Recorrido para niños creado: " + recorridoNiños);
                         break;
                     case 4:
-                        // Exit
+                        // Salir
                         break;
                     default:
-                        System.out.println("Invalid option.");
+                        System.out.println("Opción inválida.");
                 }
                 break;
             case 2:
-                // Visit the zoo
-                System.out.println("1. Select a tour");
-                System.out.println("2. Visit the zoo without a tour");
-                System.out.println("3. Exit");
+                // Visitar el zoológico
+                System.out.println("1. Seleccionar un recorrido");
+                System.out.println("2. Visitar el zoológico sin recorrido");
+                System.out.println("3. Salir");
 
-                int visitZooChoice = scanner.nextInt();
-                switch (visitZooChoice) {
+                int eleccionVisitarZoo = scanner.nextInt();
+                switch (eleccionVisitarZoo) {
                     case 1:
-                        // Select a tour
-                        System.out.println("1. Bird tour");
-                        System.out.println("2. Mammal tour");
-                        System.out.println("3. Children's tour");
-                        System.out.println("4. Exit");
+                        // Seleccionar un recorrido
+                        System.out.println("1. Recorrido de aves");
+                        System.out.println("2. Recorrido de mamíferos");
+                        System.out.println("3. Recorrido para niños");
+                        System.out.println("4. Salir");
 
-                        int selectTourChoice = scanner.nextInt();
-                        switch (selectTourChoice) {
+                        int eleccionSeleccionarRecorrido = scanner.nextInt();
+                        switch (eleccionSeleccionarRecorrido) {
                             case 1:
-                                // Bird tour
+                                // Recorrido de aves
                                 QuioscoInteractivo quioscoInteractivo = new QuioscoInteractivo();
-                                TourAves birdTourInteractive = new TourAves();
-                                quioscoInteractivo.seleccionarTour(birdTourInteractive);
+                                TourAves recorridoAvesInteractivo = new TourAves();
+                                quioscoInteractivo.seleccionarTour(recorridoAvesInteractivo);
                                 break;
                             case 2:
-                                // Mammal tour
-                                QuioscoInteractivo quioscoInteractivoMammal = new QuioscoInteractivo();
-                                TourMamiferos mammalTourInteractive = new TourMamiferos();
-                                quioscoInteractivoMammal.seleccionarTour(mammalTourInteractive);
+                                // Recorrido de mamíferos
+                                QuioscoInteractivo quioscoInteractivoMamiferos = new QuioscoInteractivo();
+                                TourMamiferos recorridoMamiferosInteractivo = new TourMamiferos();
+                                quioscoInteractivoMamiferos.seleccionarTour(recorridoMamiferosInteractivo);
                                 break;
                             case 3:
-                                // Children's tour
-                                QuioscoInteractivo quioscoInteractivoChildren = new QuioscoInteractivo();
-                                TourNiños childrenTourInteractive = new TourNiños();
-                                quioscoInteractivoChildren.seleccionarTour(childrenTourInteractive);
+                                // Recorrido para niños
+                                QuioscoInteractivo quioscoInteractivoNiños = new QuioscoInteractivo();
+                                TourNiños recorridoNiñosInteractivo = new TourNiños();
+                                quioscoInteractivoNiños.seleccionarTour(recorridoNiñosInteractivo);
                                 break;
                             case 4:
-                                // Exit
+                                // Salir
                                 break;
                             default:
-                                System.out.println("Invalid option.");
+                                System.out.println("Opción inválida.");
                         }
                         break;
                     case 2:
-                        // Visit the zoo without a tour
-                        System.out.println("Visiting the zoo without a tour...");
+                        // Visitar el zoológico sin recorrido
+                        System.out.println("Visitando el zoológico sin recorrido...");
                         break;
                     case 3:
-                        // Exit
+                        // Salir
                         break;
                     default:
-                        System.out.println("Invalid option.");
+                        System.out.println("Opción inválida.");
                 }
                 break;
             case 3:
-                // Exit
+                // Salir
                 break;
             default:
-                System.out.println("Invalid option.");
+                System.out.println("Opción inválida.");
         }
 
-        // Maintenance-related options
-        System.out.println("1. Add a maintenance task");
-        System.out.println("2. Show maintenance tasks");
-        System.out.println("3. Exit");
+        // Opciones relacionadas con el mantenimiento
+        System.out.println("1. Agregar una tarea de mantenimiento");
+        System.out.println("2. Mostrar tareas de mantenimiento");
+        System.out.println("3. Salir");
 
-        int maintenanceChoice = scanner.nextInt();
-        switch (maintenanceChoice) {
+        int eleccionMantenimiento = scanner.nextInt();
+        switch (eleccionMantenimiento) {
             case 1:
-                // Add a maintenance task
-                System.out.println("Enter the task description:");
-                String taskDescription = scanner.next();
-                System.out.println("Enter the task type (regular/urgent):");
-                String taskType = scanner.next();
+                // Agregar una tarea de mantenimiento
+                System.out.println("Ingresa la descripción de la tarea:");
+                String descripcionTarea = scanner.next();
+                System.out.println("Ingresa el tipo de tarea (regular/urgente):");
+                String tipoTarea = scanner.next();
                 GestorMantenimiento gestorMantenimiento = new GestorMantenimiento();
-                TareaMantenimiento tareaMantenimiento = new TareaMantenimiento(taskDescription, taskType);
+                TareaMantenimiento tareaMantenimiento = new TareaMantenimiento(descripcionTarea, tipoTarea);
                 gestorMantenimiento.agregarTarea(tareaMantenimiento);
-                System.out.println("Maintenance task added: " + tareaMantenimiento);
+                System.out.println("Tarea de mantenimiento agregada: " + tareaMantenimiento);
                 break;
             case 2:
-                // Show maintenance tasks
-                System.out.println("Maintenance tasks:");
-                GestorMantenimiento gestorMantenimientoShow = new GestorMantenimiento();
-                gestorMantenimientoShow.mostrarTareasPendientes();
+                // Mostrar tareas de mantenimiento
+                System.out.println("Tareas de mantenimiento:");
+                GestorMantenimiento gestorMantenimientoMostrar = new GestorMantenimiento();
+                gestorMantenimientoMostrar.mostrarTareasPendientes();
                 break;
             case 3:
-                // Exit
+                // Salir
                 break;
             default:
-                System.out.println("Invalid option.");
+                System.out.println("Opción inválida.");
         }
 
-        // Resource-related options
-        System.out.println("1. Add a resource");
-        System.out.println("2. Show resources");
-        System.out.println("3. Create a purchase order");
-        System.out.println("4. Add a provider");
-        System.out.println("5. Exit");
+        // Opciones relacionadas con los recursos
+        System.out.println("1. Agregar un recurso");
+        System.out.println("2. Mostrar recursos");
+        System.out.println("3. Crear una orden de compra");
+        System.out.println("4. Agregar un proveedor");
+        System.out.println("5. Salir");
 
-        int resourceChoice = scanner.nextInt();
-        switch (resourceChoice) {
+        int eleccionRecurso = scanner.nextInt();
+        switch (eleccionRecurso) {
             case 1:
-                // Add a resource
-                System.out.println("Enter the resource name:");
-                String resourceName = scanner.next();
-                System.out.println("Enter the resource quantity:");
-                int resourceQuantity = scanner.nextInt();
+                // Agregar un recurso
+                System.out.println("Ingresa el nombre del recurso:");
+                String nombreRecurso = scanner.next();
+                System.out.println("Ingresa la cantidad del recurso:");
+                int cantidadRecurso = scanner.nextInt();
                 AdministracionRecursos administracionRecursos = new AdministracionRecursos();
-                Recurso recurso = new Recurso(resourceName, resourceQuantity);
+                Recurso recurso = new Recurso(nombreRecurso, cantidadRecurso);
                 administracionRecursos.agregarRecurso(recurso);
-                System.out.println("Resource added: " + recurso);
+                System.out.println("Recurso agregado: " + recurso);
                 break;
             case 2:
-                // Show resources
-                System.out.println("Resources:");
-                AdministracionRecursos administracionRecursosShow = new AdministracionRecursos();
-                administracionRecursosShow.mostrarInventario();
+                // Mostrar recursos
+                System.out.println("Recursos:");
+                AdministracionRecursos administracionRecursosMostrar = new AdministracionRecursos();
+                administracionRecursosMostrar.mostrarInventario();
                 break;
-            case3:
-            // Create a purchase order
-            System.out.println("Enter the resource name to order:");
-            String resourceNameToOrder = scanner.next();
-            System.out.println("Enter the resource quantity to order:");
-            int resourceQuantityToOrder = scanner.nextInt();
-            Pedido pedido = new Pedido();
-            Recurso recursoToOrder = new Recurso(resourceNameToOrder, resourceQuantityToOrder);
-            pedido.agregarItem(recursoToOrder);
-            System.out.println("Purchase order created: " + pedido);
-            break3:
-            // Create a purchase order
-            System.out.println("Enter the resource name to order:");
-            String resourceNameToOrder = scanner.;
-            case next();
-                System.out.println("Enter the resource quantity to order:");
-                int resourceQuantity4:
-                // Add a provider
-                System.out.println("Enter the provider name:");
-                String providerName = scanner.next();
-                System.out.println("Enter the resources offered (commaToOrder = scanner.-separated):");
-                String resourcesOffered = scanner.next();
-                String[] resourcesOfferedArray = resourcesOffered.split(",");
-                Proveedor proveedor = newnextInt();
+            case 3:
+                // Crear una orden de compra
+                System.out.println("Ingresa el nombre del recurso para ordenar:");
+                String nombreRecursoParaOrdenar = scanner.next();
+                System.out.println("Ingresa la cantidad del recurso para ordenar:");
+                int cantidadRecursoParaOrdenar = scanner.nextInt();
                 Pedido pedido = new Pedido();
-                Recurso recursoToOrder = new Recurso(resourceNameToOrder, Proveedor( resourceQuantityToOrder);
-                pedido.agregarItem(recursoToOrder);
-                System.out.println("Purchase order created: " + pedido);
+                Recurso recursoParaOrdenar = new Recurso(nombreRecursoParaOrdenar, cantidadRecursoParaOrdenar);
+                pedido.agregarItem(recursoParaOrdenar);
+                System.out.println("Orden de compra creada: " + pedido);
                 break;
             case 4:
-                // Add a provider
-                System.out.println("Enter the provider name:");
-                String providerName = scanner.next();
-                System.out.println("Enter the resources offered (comma-separated):");
-                String resourcesOffered = scanner.next();
-                String[] resourcesOfferedArray = resourcesOffered.split(",");
-                Proveedor proveedor = new Proveedor(providerName);
-                for (String resourceOffered : resourcesOfferedArray) {
-                    proveedor.agregarRecursoOfrecido(resourceOffered.trim());
+                // Agregar un proveedor
+                System.out.println("Ingresa el nombre del proveedor:");
+                String nombreProveedor = scanner.next();
+                System.out.println("Ingresa los recursos ofrecidos (separados por comas):");
+                String recursosOfrecidos = scanner.next();
+                String[] arrayRecursosOfrecidos = recursosOfrecidos.split(",");
+                Proveedor proveedor = new Proveedor(nombreProveedor);
+                for (String recursoOfrecido : arrayRecursosOfrecidos) {
+                    proveedor.agregarRecursoOfrecido(recursoOfrecido.trim());
                 }
-                System.out.println("Provider added: " + proveedor);
+                System.out.println("Proveedor agregado: " + proveedor);
                 break;
             case 5:
-                // Exit
-                break;
-            default:
-                System.out.println("Invalid option.");
-        }
-
-        // Security-related options
-        System.out.println("1. Add a camera");
-        System.out.println("2. Add a motion sensor");
-        System.out.println("3. Monitor security devices");
-        System.out.println("4. Exit");
-
-        int securityChoice = scanner.nextInt();
-        switch (securityChoice) {
-            case 1:
-                // Add a cameraproviderName);
-                for (String resourceOffered : resourcesOfferedArray) {
-                    proveedor.agregarRecursoOfrecido(resourceOffered.trim());
-                }
-                System.out.println("Provider added: " + proveedor);
-                break;
-            case 5:
-                // Exit
-                break;
-            default:
-                System.out.println("Invalid option.");
-        }
-
-        scanner.close();
-    }
-}
+                // Sal
