@@ -20,3 +20,14 @@ public class TourAves extends Tour {
         System.out.println(descripcion + ": Observación de aves y explicaciones sobre diferentes especies.");
     }
 }
+
+public class TourMamiferos extends Tour {
+    public TourMamiferos() {
+        super("Tour para amantes de los mamíferos");
+    }
+
+    @Override
+    public void mostrarTour() {
+        System.out.println(descripcion + ": Visita a los hábitats de mamíferos y charlas sobre su cuidado.");
+    }
+}
