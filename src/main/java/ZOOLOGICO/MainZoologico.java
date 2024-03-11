@@ -2,11 +2,9 @@ import ZOOLOGICO.ANIMALES.animal;
 import ZOOLOGICO.ANIMALES.acuatico;
 import ZOOLOGICO.ANIMALES.ave;
 import ZOOLOGICO.ANIMALES.terrestre;
-import ZOOLOGICO.HABITATS.habitats;
-import ZOOLOGICO.HABITATS.ave as HabitatAve;
+as HabitatAve;
 import ZOOLOGICO.HABITATS.acuaticos as HabitatAcuaticos;
 import ZOOLOGICO.HABITATS.terrestres as HabitatTerrestres;
-import ZOOLOGICO.VISITANTES.Tour;
 import ZOOLOGICO.VISITANTES.TourAves;
 import ZOOLOGICO.VISITANTES.TourMamiferos;
 import ZOOLOGICO.VISITANTES.TourNiños;
@@ -301,7 +299,7 @@ public class Main {
                         float humedadAviario = scanner.nextFloat();
                         System.out.println("Ingresa la limpieza del aviario (verdadero/falso):");
                         boolean limpiezaAviario = scanner.nextBoolean();
-                        HabitatAve aviario = new HabitatAve(temperaturaAviario, humedadAviario, limpiezaAviario);
+                        ZOOLOGICO.HABITATS.ave aviario = new ZOOLOGICO.HABITATS.ave(temperaturaAviario, humedadAviario, limpiezaAviario);
                         System.out.println("Aviario creado: " + aviario);
                         break;
                     case 2:
@@ -312,7 +310,7 @@ public class Main {
                         float humedadHabitatAcuatico = scanner.nextFloat();
                         System.out.println("Ingresa la limpieza del hábitat acuático (verdadero/falso):");
                         boolean limpiezaHabitatAcuatico = scanner.nextBoolean();
-                        HabitatAcuaticos habitatAcuatico = new HabitatAcuaticos(temperaturaHabitatAcuatico, humedadHabitatAcuatico, limpiezaHabitatAcuatico, true);
+                        acuaticos habitatAcuatico = new acuaticos(temperaturaHabitatAcuatico, humedadHabitatAcuatico, limpiezaHabitatAcuatico);
                         System.out.println("Hábitat acuático creado: " + habitatAcuatico);
                         break;
                     case 3:
@@ -323,7 +321,7 @@ public class Main {
                         float humedadHabitatTerrestre = scanner.nextFloat();
                         System.out.println("Ingresa la limpieza del hábitat terrestre (verdadero/falso):");
                         boolean limpiezaHabitatTerrestre = scanner.nextBoolean();
-                        HabitatTerrestres habitatTerrestre = new HabitatTerrestres(temperaturaHabitatTerrestre, humedadHabitatTerrestre, limpiezaHabitatTerrestre, true);
+                        terrestres habitatTerrestre = new terrestres(temperaturaHabitatTerrestre, humedadHabitatTerrestre, limpiezaHabitatTerrestre, true);
                         System.out.println("Hábitat terrestre creado: " + habitatTerrestre);
                         break;
                     case 4:
