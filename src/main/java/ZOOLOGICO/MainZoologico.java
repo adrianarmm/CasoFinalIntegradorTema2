@@ -5,23 +5,7 @@ import ZOOLOGICO.ANIMALES.animal;
 import ZOOLOGICO.ANIMALES.acuatico;
 import ZOOLOGICO.ANIMALES.ave;
 import ZOOLOGICO.ANIMALES.terrestre;
-import ZOOLOGICO.HABITATS.habitats;
-import ZOOLOGICO.HABITATS.ave as HabitatAve;
-import ZOOLOGICO.HABITATS.acuaticos as HabitatAcuaticos;
-import ZOOLOGICO.HABITATS.terrestres as HabitatTerrestres;
-import ZOOLOGICO.VISITANTES.Tour;
-import ZOOLOGICO.VISITANTES.TourAves;
-import ZOOLOGICO.VISITANTES.TourMamiferos;
-import ZOOLOGICO.VISITANTES.TourNiños;
-import ZOOLOGICO.VISITANTES.QuioscoInteractivo;
-import ZOOLOGICO.MANTENIMIENTO.Camara;
-import ZOOLOGICO.MANTENIMIENTO.SensorMovimiento;
-import ZOOLOGICO.MANTENIMIENTO.GestorMantenimiento;
-import ZOOLOGICO.MANTENIMIENTO.TareaMantenimiento;
-import ZOOLOGICO.RECURSOS.AdministracionRecursos;
-import ZOOLOGICO.RECURSOS.Pedido;
-import ZOOLOGICO.RECURSOS.Proveedor;
-import ZOOLOGICO.RECURSOS.Recurso;
+
 
 import java.util.Scanner;
 
