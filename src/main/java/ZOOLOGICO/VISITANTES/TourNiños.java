@@ -10,3 +10,7 @@ public class TourNiños extends tour {
         System.out.println(descripcion + ": Incluye juegos y actividades interactivas.");
     }
 }
+public class TourAves extends Tour {
+    public TourAves() {
+        super("Tour para aficionados a las aves");
+    }
