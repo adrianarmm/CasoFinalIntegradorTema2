@@ -1,5 +1,4 @@
 
-
 package ZOOLOGICO.MANTENIMIENTO;
 public class TareaMantenimiento {
     private String descripcion;
