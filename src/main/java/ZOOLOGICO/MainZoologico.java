@@ -584,3 +584,43 @@ public class Main {
                 break;
             case 5:
                 // Sal
+
+                // Opciones relacionadas con la seguridad
+                System.out.println("1. Agregar una cámara");
+                System.out.println("2. Agregar un sensor de movimiento");
+                System.out.println("3. Monitorear dispositivos de seguridad");
+                System.out.println("4. Salir");
+
+                int eleccionSeguridad = scanner.nextInt();
+                switch (eleccionSeguridad) {
+                    case 1:
+                        // Agregar una cámara
+                        System.out.println("Introduce la descripción de la cámara:");
+                        String descripcionCamara = scanner.next();
+                        Camara camara = new Camara(descripcionCamara);
+                        System.out.println("Cámara agregada: " + camara);
+                        break;
+                    case 2:
+                        // Agregar un sensor de movimiento
+                        System.out.println("Introduce la descripción del sensor de movimiento:");
+                        String descripcionSensor = scanner.next();
+                        SensorMovimiento sensorMovimiento = new SensorMovimiento(descripcionSensor);
+                        System.out.println("Sensor de movimiento agregado: " + sensorMovimiento);
+                        break;
+                    case 3:
+                        // Monitorear dispositivos de seguridad
+                        System.out.println("Monitoreando dispositivos de seguridad...");
+                        // Lógica para monitorear dispositivos de seguridad
+                        break;
+                    case 4:
+                        // Salir
+                        break;
+                    default:
+                        System.out.println("Opción inválida.");
+                }
+
+                scanner.close();
+        }
+    }
+}
+
