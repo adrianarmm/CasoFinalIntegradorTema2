@@ -33,6 +33,8 @@ public class Recurso {public class Recurso {
                 "nombre='" + nombre + '\'' +
                 ", cantidad=" + cantidad +
                 '}';
-    }
 }
+}
+}
+
 
