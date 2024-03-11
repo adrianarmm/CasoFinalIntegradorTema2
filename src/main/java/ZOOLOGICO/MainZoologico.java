@@ -368,7 +368,7 @@ public class Main {
                                 float salinidadAcuarioAMonitorear = scanner.nextFloat();
                                 System.out.println("Ingresa la limpieza del acuario (verdadero/falso):");
                                 boolean limpiezaAcuarioAMonitorear = scanner.nextBoolean();
-                                HabitatAcuatico acuarioAMonitorear = new HabitatAcuatico(temperaturaAcuarioAMonitorear, salinidadAcuarioAMonitorear, limpiezaAcuarioAMonitorear);
+                                acuaticos acuarioAMonitorear = new acuaticos(temperaturaAcuarioAMonitorear, salinidadAcuarioAMonitorear, limpiezaAcuarioAMonitorear);
                                 acuarioAMonitorear.toString();
                                 break;
                             case 3:
@@ -379,7 +379,7 @@ public class Main {
                                 float humedadTerrarioAMonitorear = scanner.nextFloat();
                                 System.out.println("Ingresa la limpieza del terrario (verdadero/falso):");
                                 boolean limpiezaTerrarioAMonitorear = scanner.nextBoolean();
-                                HabitatTerrestre terrarioAMonitorear = new HabitatTerrestre(temperaturaTerrarioAMonitorear, humedadTerrarioAMonitorear, limpiezaTerrarioAMonitorear);
+                                terrestres terrarioAMonitorear = new terrestres(temperaturaTerrarioAMonitorear, humedadTerrarioAMonitorear, limpiezaTerrarioAMonitorear);
                                 terrarioAMonitorear.toString();
                                 break;
                             default:
