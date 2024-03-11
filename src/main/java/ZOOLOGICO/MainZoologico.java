@@ -1,3 +1,6 @@
+
+package ZOOLOGICO;
+
 import ZOOLOGICO.ANIMALES.animal;
 import ZOOLOGICO.ANIMALES.acuatico;
 import ZOOLOGICO.ANIMALES.ave;
