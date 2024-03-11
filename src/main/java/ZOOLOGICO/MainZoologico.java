@@ -86,5 +86,6 @@ public class MainZoologico {
     }
 
     // Similarmente, podrías implementar métodos para las demás gestiones.
+
 }
 
