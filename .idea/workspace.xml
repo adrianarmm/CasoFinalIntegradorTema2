@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5db1ac8a-ea94-437a-84bb-e710ea8f005c" name="Changes" comment="CREACION MAIN" />
+    <list default="true" id="5db1ac8a-ea94-437a-84bb-e710ea8f005c" name="Changes" comment="CREACION MAIN NUEVO CONTINUACION">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +38,8 @@
     "Application.MAINANIMALES.executor": "Run",
     "Application.MAINHABITATS.executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.MainZoologico.executor": "Run",
+    "Application.Principal.executor": "Run",
     "Application.Prueba.executor": "Run",
     "Application.ZooApp.executor": "Run",
     "Application.ZoologicoDemo.executor": "Run",
@@ -76,31 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1709717493665</updated>
-      <workItem from="1709717494919" duration="10360000" />
-    </task>
-    <task id="LOCAL-00080" summary="cambios">
-      <option name="closed" value="true" />
-      <created>1709721951815</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1709721951815</updated>
-    </task>
-    <task id="LOCAL-00081" summary="cambios">
-      <option name="closed" value="true" />
-      <created>1709722041101</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1709722041101</updated>
-    </task>
-    <task id="LOCAL-00082" summary="cambios">
-      <option name="closed" value="true" />
-      <created>1709722151122</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1709722151122</updated>
+      <workItem from="1709717494919" duration="11510000" />
     </task>
     <task id="LOCAL-00083" summary="cambios">
       <option name="closed" value="true" />
@@ -470,7 +451,31 @@
       <option name="project" value="LOCAL" />
       <updated>1710183904754</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <task id="LOCAL-00129" summary="CREACION MAIN NUEVO">
+      <option name="closed" value="true" />
+      <created>1710184413462</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1710184413462</updated>
+    </task>
+    <task id="LOCAL-00130" summary="CREACION MAIN NUEVO">
+      <option name="closed" value="true" />
+      <created>1710184443407</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1710184443407</updated>
+    </task>
+    <task id="LOCAL-00131" summary="CREACION MAIN NUEVO CONTINUACION">
+      <option name="closed" value="true" />
+      <created>1710184556637</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1710184556637</updated>
+    </task>
+    <option name="localTasksCounter" value="132" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -488,8 +493,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="utilizo overrides" />
-    <MESSAGE value="PACKAGE ANIMALES INTRODUCIDO" />
     <MESSAGE value="PACKAGE ANIMALES + HABITATS INTRODUCIDO" />
     <MESSAGE value="creacion acuaticos" />
     <MESSAGE value="creacion ave" />
@@ -513,6 +516,8 @@
     <MESSAGE value="nueva clase" />
     <MESSAGE value="prueba temporal" />
     <MESSAGE value="CREACION MAIN" />
-    <option name="LAST_COMMIT_MESSAGE" value="CREACION MAIN" />
+    <MESSAGE value="CREACION MAIN NUEVO" />
+    <MESSAGE value="CREACION MAIN NUEVO CONTINUACION" />
+    <option name="LAST_COMMIT_MESSAGE" value="CREACION MAIN NUEVO CONTINUACION" />
   </component>
 </project>
