@@ -1,6 +1,6 @@
 package ZOOLOGICO.VISITANTES;
 
-public class tour {
+public abstract class tour {
     protected String descripcion;
 
     public tour(String descripcion) {
@@ -9,4 +9,4 @@ public class tour {
 
     public abstract void mostrarTour();
 }
-}
+
