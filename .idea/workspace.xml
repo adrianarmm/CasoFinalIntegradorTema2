@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5db1ac8a-ea94-437a-84bb-e710ea8f005c" name="Changes" comment="cambios" />
+    <list default="true" id="5db1ac8a-ea94-437a-84bb-e710ea8f005c" name="Changes" comment="CREACION MAIN" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +36,7 @@
     "Application.MAINHABITATS.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.Prueba.executor": "Run",
+    "Application.ZooApp.executor": "Run",
     "Application.ZoologicoDemo.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -75,79 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1709717493665</updated>
-      <workItem from="1709717494919" duration="8958000" />
-    </task>
-    <task id="LOCAL-00071" summary="arreglos">
-      <option name="closed" value="true" />
-      <created>1709721365645</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1709721365645</updated>
-    </task>
-    <task id="LOCAL-00072" summary="creacion ave">
-      <option name="closed" value="true" />
-      <created>1709721396863</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1709721396863</updated>
-    </task>
-    <task id="LOCAL-00073" summary="creacion terrestres">
-      <option name="closed" value="true" />
-      <created>1709721433865</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1709721433865</updated>
-    </task>
-    <task id="LOCAL-00074" summary="creo un main temporal de habitats">
-      <option name="closed" value="true" />
-      <created>1709721479130</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1709721479130</updated>
-    </task>
-    <task id="LOCAL-00075" summary="arreglos">
-      <option name="closed" value="true" />
-      <created>1709721530942</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1709721530942</updated>
-    </task>
-    <task id="LOCAL-00076" summary="arreglos MAINHABITATS">
-      <option name="closed" value="true" />
-      <created>1709721719208</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1709721719208</updated>
-    </task>
-    <task id="LOCAL-00077" summary="cambios">
-      <option name="closed" value="true" />
-      <created>1709721775977</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1709721775977</updated>
-    </task>
-    <task id="LOCAL-00078" summary="cambios">
-      <option name="closed" value="true" />
-      <created>1709721820494</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1709721820495</updated>
-    </task>
-    <task id="LOCAL-00079" summary="cambios">
-      <option name="closed" value="true" />
-      <created>1709721860141</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1709721860141</updated>
+      <workItem from="1709717494919" duration="10360000" />
     </task>
     <task id="LOCAL-00080" summary="cambios">
       <option name="closed" value="true" />
@@ -469,7 +398,79 @@
       <option name="project" value="LOCAL" />
       <updated>1710182498400</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="cambios">
+      <option name="closed" value="true" />
+      <created>1710182656361</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1710182656361</updated>
+    </task>
+    <task id="LOCAL-00121" summary="Nuevo package">
+      <option name="closed" value="true" />
+      <created>1710182733540</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1710182733540</updated>
+    </task>
+    <task id="LOCAL-00122" summary="cambios">
+      <option name="closed" value="true" />
+      <created>1710182759612</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1710182759612</updated>
+    </task>
+    <task id="LOCAL-00123" summary="nueva clase">
+      <option name="closed" value="true" />
+      <created>1710182802429</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1710182802430</updated>
+    </task>
+    <task id="LOCAL-00124" summary="nueva clase">
+      <option name="closed" value="true" />
+      <created>1710182844172</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1710182844172</updated>
+    </task>
+    <task id="LOCAL-00125" summary="nuevas clases">
+      <option name="closed" value="true" />
+      <created>1710182905522</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1710182905522</updated>
+    </task>
+    <task id="LOCAL-00126" summary="nueva clase">
+      <option name="closed" value="true" />
+      <created>1710182952862</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1710182952862</updated>
+    </task>
+    <task id="LOCAL-00127" summary="prueba temporal">
+      <option name="closed" value="true" />
+      <created>1710183091583</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1710183091583</updated>
+    </task>
+    <task id="LOCAL-00128" summary="CREACION MAIN">
+      <option name="closed" value="true" />
+      <created>1710183904754</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1710183904754</updated>
+    </task>
+    <option name="localTasksCounter" value="129" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,11 +488,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Mostrar información del león" />
-    <MESSAGE value="creacion carpeta habitats" />
-    <MESSAGE value="creacion carpeta habitats + class habitats" />
-    <MESSAGE value="utilizo floats" />
-    <MESSAGE value="creacion de public" />
     <MESSAGE value="utilizo overrides" />
     <MESSAGE value="PACKAGE ANIMALES INTRODUCIDO" />
     <MESSAGE value="PACKAGE ANIMALES + HABITATS INTRODUCIDO" />
@@ -511,7 +507,12 @@
     <MESSAGE value="creaciones" />
     <MESSAGE value="nuevo package" />
     <MESSAGE value="creacion AdministracionRecursos" />
+    <MESSAGE value="Nuevo package" />
     <MESSAGE value="cambios" />
-    <option name="LAST_COMMIT_MESSAGE" value="cambios" />
+    <MESSAGE value="nuevas clases" />
+    <MESSAGE value="nueva clase" />
+    <MESSAGE value="prueba temporal" />
+    <MESSAGE value="CREACION MAIN" />
+    <option name="LAST_COMMIT_MESSAGE" value="CREACION MAIN" />
   </component>
 </project>

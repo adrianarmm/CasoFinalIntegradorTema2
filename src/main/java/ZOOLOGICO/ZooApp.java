@@ -6,37 +6,85 @@ import ZOOLOGICO.VISITANTES.*;
 import ZOOLOGICO.MANTENIMIENTO.*;
 import ZOOLOGICO.RECURSOS.*;
 
-public class ZooApp {
+import java.util.Scanner;
+
+public class MainZoologico {
+
     public static void main(String[] args) {
-        // Crear algunos animales
-        animal leon = new terrestre("Simba", "Felino", "León", "Amarillo", "M", "10 años", "190kg", "1.2m", "Carnívoro", "Sabana", "Carne", "Vivíparo", "Regular", "Ninguna", "Ninguna", 1, true, true, true, true, true, "Sabana");
-        animal tiburon = new acuatico("Bruce", "Pez", "Tiburón Blanco", "Gris", "M", "15 años", "600kg", "4m", "Carnívoro", "Océano", "Peces", "Ovovivíparo", "Regular", "Ninguna", "Ninguna", 2, true, false, true, true, true, "Salada");
+        Scanner scanner = new Scanner(System.in);
+        boolean salir = false;
+        int opcion;
 
-        // Crear un hábitat
-        habitats savana = new terrestres(35, 40, true, true);
+        while (!salir) {
+            System.out.println("Bienvenido al Sistema de Gestión del Zoológico");
+            System.out.println("1. Gestión de Animales");
+            System.out.println("2. Gestión de Habitats");
+            System.out.println("3. Gestión de Visitantes y Tours");
+            System.out.println("4. Gestión de Mantenimiento y Seguridad");
+            System.out.println("5. Gestión de Recursos");
+            System.out.println("6. Salir");
+            System.out.println("Seleccione una opción: ");
+            opcion = scanner.nextInt();
 
-        // Crear tours
-        Tour tourAves = new TourAves();
-        Tour tourNiños = new TourNiños();
-        QuioscoInteractivo quiosco = new QuioscoInteractivo();
-
-        // Seleccionar un tour
-        quiosco.seleccionarTour(tourAves);
-        quiosco.seleccionarTour(tourNiños);
-
-        // Gestión de mantenimiento
-        Camara camara = new Camara("Entrada Principal");
-        SensorMovimiento sensor = new SensorMovimiento("Cerca de los felinos");
-        SistemaSeguridad sistemaSeguridad = new SistemaSeguridad();
-        sistemaSeguridad.agregarDispositivo(camara);
-        sistemaSeguridad.agregarDispositivo(sensor);
-
-        // Administración de recursos
-        Recurso carne = new Recurso("Carne", 500);
-        AdministracionRecursos adminRecursos = new AdministracionRecursos();
-        adminRecursos.agregarRecurso(carne);
-
-        // Mostrar estado actual del inventario de recursos
-        adminRecursos.mostrarInventario();
+            switch (opcion) {
+                case 1:
+                    gestionAnimales(scanner);
+                    break;
+                case 2:
+                    // Aquí podrías llamar a una función similar para gestionar los hábitats
+                    break;
+                case 3:
+                    gestionTours(scanner);
+                    break;
+                case 4:
+                    // Funciones de gestión de mantenimiento y seguridad
+                    break;
+                case 5:
+                    // Funciones de gestión de recursos
+                    break;
+                case 6:
+                    salir = true;
+                    break;
+                default:
+                    System.out.println("Seleccione una opción válida");
+            }
+        }
     }
+
+    private static void gestionAnimales(Scanner scanner) {
+        // Ejemplo de cómo podrías estructurar la creación de un animal
+        System.out.println("Creación de un nuevo animal");
+        // Aquí solicitarías los datos necesarios al usuario y crearías el animal
+        // Por ejemplo, podrías tener métodos para registrarAlimentacion, registrarReproduccion, etc.
+    }
+
+    private static void gestionTours(Scanner scanner) {
+        QuioscoInteractivo quiosco = new QuioscoInteractivo();
+        Tour tourAves = new TourAves();
+        Tour tourMamiferos = new TourMamiferos();
+        Tour tourNiños = new TourNiños();
+
+        System.out.println("Seleccione el Tour que desea:");
+        System.out.println("1. Tour de Aves");
+        System.out.println("2. Tour de Mamíferos");
+        System.out.println("3. Tour para Niños");
+        int opcionTour = scanner.nextInt();
+
+        switch (opcionTour) {
+            case 1:
+                quiosco.seleccionarTour(tourAves);
+                break;
+            case 2:
+                quiosco.seleccionarTour(tourMamiferos);
+                break;
+            case 3:
+                quiosco.seleccionarTour(tourNiños);
+                break;
+            default:
+                System.out.println("Opción no válida");
+        }
+    }
+
+    // Similarmente, podrías implementar métodos para las demás gestiones.
 }
+
