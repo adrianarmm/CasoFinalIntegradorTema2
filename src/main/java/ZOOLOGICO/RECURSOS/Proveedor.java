@@ -1,5 +1,8 @@
 package ZOOLOGICO.RECURSOS;
 
+import java.util.ArrayList;
+import java.util.List;
+
     public class Proveedor {
         private String nombre;
         private List<String> recursosOfrecidos;
