@@ -85,7 +85,66 @@ public class MainZoologico {
         }
     }
 
-    // Similarmente, podrías implementar métodos para las demás gestiones.
+    private static void gestionHabitats(Scanner scanner) {
+        System.out.println("Gestión de Hábitats");
+        System.out.println("1. Registrar un nuevo hábitat");
+        System.out.println("2. Mostrar hábitats");
+        // Aquí puedes expandir las opciones como necesites (editar, eliminar, etc.)
+        int opcion = scanner.nextInt();
+        switch (opcion) {
+            case 1:
+                // Lógica para registrar un nuevo hábitat
+                break;
+            case 2:
+                // Lógica para mostrar todos los hábitats
+                break;
+            default:
+                System.out.println("Opción no válida");
+                break;
+        }
+    }
+
+    private static void gestionMantenimientoYSeguridad(Scanner scanner) {
+        System.out.println("Gestión de Mantenimiento y Seguridad");
+        System.out.println("1. Registrar dispositivo de seguridad");
+        System.out.println("2. Registrar tarea de mantenimiento");
+        // Más opciones como necesites
+        int opcion = scanner.nextInt();
+        switch (opcion) {
+            case 1:
+                // Registrar dispositivo de seguridad
+                break;
+            case 2:
+                // Registrar tarea de mantenimiento
+                break;
+            default:
+                System.out.println("Opción no válida");
+                break;
+        }
+    }
+
+    private static void gestionRecursos(Scanner scanner) {
+        System.out.println("Gestión de Recursos");
+        System.out.println("1. Agregar recurso al inventario");
+        System.out.println("2. Mostrar inventario");
+        // Y otras opciones relacionadas
+        int opcion = scanner.nextInt();
+        switch (opcion) {
+            case 1:
+                // Lógica para agregar un recurso al inventario
+                break;
+            case 2:
+                // Lógica para mostrar el inventario
+                break;
+            default:
+                System.out.println("Opción no válida");
+                break;
+        }
+    }
+
+    // Lugar para más métodos de gestión según sea necesario
+
+// Final de MainZoologico.java
 
 }
 
