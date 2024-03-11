@@ -357,33 +357,30 @@ public class Main {
                                 float humedadAviarioAMonitorear = scanner.nextFloat();
                                 System.out.println("Ingresa la limpieza del aviario (verdadero/falso):");
                                 boolean limpiezaAviarioAMonitorear = scanner.nextBoolean();
-                                HabitatAve aviarioAMonitorear = new HabitatAve(temperaturaAviarioAMonitorear, humedadAviarioAMonitorear, limpiezaAviarioAMonitorear);
-                                aviarioAMonitorear.monitorear();
+                                ZOOLOGICO.HABITATS.ave aviarioAMonitorear = new ZOOLOGICO.HABITATS.ave(temperaturaAviarioAMonitorear, humedadAviarioAMonitorear, limpiezaAviarioAMonitorear);
+                                aviarioAMonitorear.toString();
                                 break;
                             case 2:
-                                // Monitorear un hábitat acuático
-                                System.out.println("Ingresa la temperatura del hábitat acuático:");
-                                float temperaturaHabitatAcuaticoAMonitorear = scanner.nextFloat();
-                                System.out.println("Ingresa la humedad del hábitat acuático:");
-                                float humedadHabitatAcuaticoAMonitorear = scanner.nextFloat();
-                                System.out.println("Ingresa la limpieza del hábitat acuático (verdadero/falso):");
-                                boolean limpiezaHabitatAcuaticoAMonitorear = scanner.nextBoolean();
-                                HabitatAcuaticos habitatAcuaticoAMonitorear = new HabitatAcuaticos(temperaturaHabitatAcuaticoAMonitorear, humedadHabitatAcuaticoAMonitorear, limpiezaHabitatAcuaticoAMonitorear, true);
-                                habitatAcuaticoAMonitorear.monitorear();
+                                // Monitorear un acuario
+                                System.out.println("Ingresa la temperatura del acuario:");
+                                float temperaturaAcuarioAMonitorear = scanner.nextFloat();
+                                System.out.println("Ingresa la salinidad del acuario:");
+                                float salinidadAcuarioAMonitorear = scanner.nextFloat();
+                                System.out.println("Ingresa la limpieza del acuario (verdadero/falso):");
+                                boolean limpiezaAcuarioAMonitorear = scanner.nextBoolean();
+                                HabitatAcuatico acuarioAMonitorear = new HabitatAcuatico(temperaturaAcuarioAMonitorear, salinidadAcuarioAMonitorear, limpiezaAcuarioAMonitorear);
+                                acuarioAMonitorear.toString();
                                 break;
                             case 3:
-                                // Monitorear un hábitat terrestre
-                                System.out.println("Ingresa la temperatura del hábitat terrestre:");
-                                float temperaturaHabitatTerrestreAMonitorear = scanner.nextFloat();
-                                System.out.println("Ingresa la humedad del hábitat terrestre:");
-                                float humedadHabitatTerrestreAMonitorear = scanner.nextFloat();
-                                System.out.println("Ingresa la limpieza del hábitat terrestre (verdadero/falso):");
-                                boolean limpiezaHabitatTerrestreAMonitorear = scanner.nextBoolean();
-                                HabitatTerrestres habitatTerrestreAMonitorear = new HabitatTerrestres(temperaturaHabitatTerrestreAMonitorear, humedadHabitatTerrestreAMonitorear, limpiezaHabitatTerrestreAMonitorear, true);
-                                habitatTerrestreAMonitorear.monitorear();
-                                break;
-                            case 4:
-                                // Salir
+                                // Monitorear un terrario
+                                System.out.println("Ingresa la temperatura del terrario:");
+                                float temperaturaTerrarioAMonitorear = scanner.nextFloat();
+                                System.out.println("Ingresa la humedad del terrario:");
+                                float humedadTerrarioAMonitorear = scanner.nextFloat();
+                                System.out.println("Ingresa la limpieza del terrario (verdadero/falso):");
+                                boolean limpiezaTerrarioAMonitorear = scanner.nextBoolean();
+                                HabitatTerrestre terrarioAMonitorear = new HabitatTerrestre(temperaturaTerrarioAMonitorear, humedadTerrarioAMonitorear, limpiezaTerrarioAMonitorear);
+                                terrarioAMonitorear.toString();
                                 break;
                             default:
                                 System.out.println("Opción inválida.");
