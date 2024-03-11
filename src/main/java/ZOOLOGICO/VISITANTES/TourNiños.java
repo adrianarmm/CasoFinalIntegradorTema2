@@ -14,3 +14,9 @@ public class TourAves extends Tour {
     public TourAves() {
         super("Tour para aficionados a las aves");
     }
+
+    @Override
+    public void mostrarTour() {
+        System.out.println(descripcion + ": Observación de aves y explicaciones sobre diferentes especies.");
+    }
+}
