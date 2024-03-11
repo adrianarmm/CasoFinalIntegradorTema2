@@ -1,6 +1,7 @@
 package ZOOLOGICO.RECURSOS;
 
-public class Recurso {public class Recurso {
+public class Recurso {
+
     private String nombre;
     private int cantidad;
 
@@ -35,6 +36,6 @@ public class Recurso {public class Recurso {
                 '}';
 }
 }
-}
+
 
 
