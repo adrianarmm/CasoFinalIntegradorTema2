@@ -16,6 +16,9 @@ public class ave extends habitats {
         super();
     }
 
+    public ave(float temperaturaAviarioAMonitorear, float humedadAviarioAMonitorear, float limpiezaAviarioAMonitorear) {
+    }
+
     public String toString() {
         return "aviario []";
     }

@@ -338,7 +338,7 @@ public class Main {
                 switch (eleccionAccionHabitat) {
                     case 1:
                         // Monitorear un hábitat
-                        System.out.println("1. Monitorear un aviario");
+                        System.out.println("1. Monitorear un hábitat aviario");
                         System.out.println("2. Monitorear un hábitat acuático");
                         System.out.println("3. Monitorear un hábitat terrestre");
                         System.out.println("4. Salir");
@@ -351,8 +351,8 @@ public class Main {
                                 float temperaturaAviarioAMonitorear = scanner.nextFloat();
                                 System.out.println("Ingresa la humedad del aviario:");
                                 float humedadAviarioAMonitorear = scanner.nextFloat();
-                                System.out.println("Ingresa la limpieza del aviario (verdadero/falso):");
-                                boolean limpiezaAviarioAMonitorear = scanner.nextBoolean();
+                                System.out.println("Ingresa la limpieza del aviario :");
+                                float limpiezaAviarioAMonitorear = scanner.nextFloat();
                                 ZOOLOGICO.HABITATS.ave aviarioAMonitorear = new ZOOLOGICO.HABITATS.ave(temperaturaAviarioAMonitorear, humedadAviarioAMonitorear, limpiezaAviarioAMonitorear);
                                 aviarioAMonitorear.toString();
                                 break;
