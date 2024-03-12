@@ -283,11 +283,14 @@ public class Main {
                     break;
                     case 1:
                         //Registrar alimentacion
-                        System.out.println("Ingresa el nombre del animal:");
-                        nombreAnimal = scanner.next();
-                        // Suponiendo que "Animal" es una clase que extiende de AnimalBase.
-                        animal = new animal(nombreAnimal);
-                        System.out.println("Animal creado: " + animal);
+                        if (animal != null) {
+                            System.out.println("Ingresa la reproducción del animal:");
+                            String reproduccion = scanner.next();
+                            // animal.setReproduccion(reproduccion); // Esto requeriría casting si es específico de una subclase
+                            System.out.println("Reproducción registrada: " + reproduccion);
+                        } else {
+                            System.out.println("Primero crea un animal.");
+                        }
                         break;
 
                     case 2:
