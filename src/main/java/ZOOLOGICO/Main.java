@@ -589,20 +589,20 @@ public class Main {
         System.out.println("1. Agregar una cámara de seguridad");
         System.out.println("2. Salir");
 
-        int eleccionSeguridad = scanner.nextInt();
-        scanner.nextLine();
+        int eleccionSeguridad =scanner.nextInt();
 
         switch (eleccionSeguridad) {
             case 1:
                 System.out.println("Ingresa el nombre de la cámara de seguridad:");
-                String nombreCamara = scanner.nextLine();
+                String nombreCamara = scanner.nextLine(); // Ahora esto debería funcionar correctamente
+                // Suponiendo que tienes un constructor Camara que toma el nombre como parámetro
                 Camara camara = new Camara(nombreCamara);
                 System.out.println("Cámara agregada: " + nombreCamara);
                 break;
 
             case 2:
                 System.out.println("Saliendo de las opciones de seguridad...");
-                boolean salirSeguridad = true;
+                // Aquí debes manejar la salida de las opciones de seguridad, si tienes un bucle, deberías modificar su condición aquí
                 break;
             default:
                 System.out.println("Opción no válida. Intente de nuevo.");
