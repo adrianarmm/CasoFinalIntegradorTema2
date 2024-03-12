@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7567afc1-3eab-4474-bc0a-a50303a0f0c7" name="Changes" comment="cambios">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="7567afc1-3eab-4474-bc0a-a50303a0f0c7" name="Changes" comment="cambios" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -203,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710265106969</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="cambios">
+      <option name="closed" value="true" />
+      <created>1710265147251</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1710265147251</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
