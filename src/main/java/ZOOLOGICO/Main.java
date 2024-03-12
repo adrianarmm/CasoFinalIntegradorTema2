@@ -21,6 +21,7 @@ import ZOOLOGICO.RECURSOS.Recurso;
 
 import java.util.Scanner;
 
+
 public class Main {
 
     public static void main(String[] args) {
@@ -29,6 +30,7 @@ public class Main {
         // Opciones relacionadas con los animales
         System.out.println("Bienvenidos al zoológico");
         System.out.println("=== Menú ===");
+
         System.out.println("1. Crear un animal");
         System.out.println("2. Crear un animal acuático");
         System.out.println("3. Crear un ave");
@@ -199,7 +201,7 @@ public class Main {
                         break;
 
                     case 9:
-//Registrar edad
+                        //Registrar edad
                         System.out.println("Ingresa el nombre del animal:");
                         nombreAnimal = scanner.next();
                         // Suponiendo que "Animal" es una clase que extiende de AnimalBase.
@@ -310,9 +312,11 @@ public class Main {
 
             // Opciones relacionadas con los hábitats
 
+
             System.out.println("1. Crear un hábitat");
             System.out.println("2. Realizar acciones en hábitats");
             System.out.println("3. Salir");
+
 
 
             int eleccionHabitat = scanner.nextInt();
