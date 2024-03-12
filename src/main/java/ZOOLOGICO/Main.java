@@ -127,12 +127,13 @@ public class Main {
                 int eleccionAccionAnimal = scanner.nextInt();
                 switch (eleccionAccionAnimal) {
                     case 1:
-                        // Registrar alimentación
-                        System.out.println("Ingresa la alimentación del animal:");
-                        String alimentacion = scanner.next();
-                        animal.setAlimentacion(alimentacion);
-                        System.out.println("Alimentación registrada: " + alimentacion);
-                        break;
+                        //Registrar alimentacion
+
+
+
+
+
+
 
                     case 2:
                         // Registrar reproducción
@@ -277,10 +278,6 @@ public class Main {
                         System.out.println("Opción inválida.");
                 }
                 break;
-
-
-
-
 
         // Opciones relacionadas con los hábitats
         System.out.println("1. Crear un hábitat");
@@ -625,7 +622,11 @@ public class Main {
                 System.out.println("Opción no válida. Intente de nuevo.");
                 break;
         }
+        }
     }
 }
+
+
+
 
 
