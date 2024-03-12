@@ -591,6 +591,8 @@ public class Main {
 
         int eleccionSeguridad =scanner.nextInt();
 
+        scanner.nextLine(); // Esto es necesario para limpiar el buffer del scanner
+
         switch (eleccionSeguridad) {
             case 1:
                 System.out.println("Ingresa el nombre de la cámara de seguridad:");
