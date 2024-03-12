@@ -590,6 +590,7 @@ public class Main {
         // Opciones relacionadas con la seguridad
         System.out.println("1. Agregar una cámara de seguridad");
         System.out.println("2. Salir");
+        System.out.println("3 Agregar un sensor de movimiento");
 
         int eleccionSeguridad = scanner.nextInt();
         switch (eleccionSeguridad) {
