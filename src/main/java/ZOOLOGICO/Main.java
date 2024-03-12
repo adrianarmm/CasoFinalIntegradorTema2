@@ -128,10 +128,11 @@ public class Main {
                 switch (eleccionAccionAnimal) {
                     case 1:
                         //Registrar alimentacion
-                        System.out.println("Ingresa la alimentación del animal:");
-                        String alimentacion = scanner.next();
-                        animal.setAlimentacion(alimentacion);
-                        System.out.println("Alimentación registrada: " + alimentacion);
+                        System.out.println("Ingresa el nombre del animal:");
+                        String nombreAnimal = scanner.next();
+                        // Suponiendo que "Animal" es una clase que extiende de AnimalBase.
+                        animal = new Animal(nombreAnimal);
+                        System.out.println("Animal creado: " + animal);
                         break;
 
                     case 2:
