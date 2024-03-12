@@ -27,6 +27,8 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         // Opciones relacionadas con los animales
+        System.out.println("Bienvenidos al zoológico");
+        System.out.println("=== Menú ===");
         System.out.println("1. Crear un animal");
 
         int eleccion = scanner.nextInt();
@@ -546,7 +548,8 @@ public class Main {
             case 2:
                 // Mostrar recursos
                 System.out.println("Recursos:");
-
+                System.out.println("Ingresa el nombre del recurso:");
+                System.out.println("Ingresa la cantidad del recurso:");
                 AdministracionRecursos administracionRecursosMostrar = new AdministracionRecursos();
                 administracionRecursosMostrar.mostrarInventario();
                 break;
