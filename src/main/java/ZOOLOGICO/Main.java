@@ -546,6 +546,7 @@ public class Main {
             case 2:
                 // Mostrar recursos
                 System.out.println("Recursos:");
+
                 AdministracionRecursos administracionRecursosMostrar = new AdministracionRecursos();
                 administracionRecursosMostrar.mostrarInventario();
                 break;
