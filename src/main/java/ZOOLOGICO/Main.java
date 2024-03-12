@@ -584,19 +584,18 @@ public class Main {
 
                 default:
                     System.out.println("Opción inválida.");
-}
+        }
+
+
         // Opciones relacionadas con la seguridad
         System.out.println("1. Agregar una cámara de seguridad");
         System.out.println("2. Salir");
 
         int eleccionSeguridad =scanner.nextInt();
-
-
         switch (eleccionSeguridad) {
             case 1:
                 System.out.println("Ingresa el nombre de la cámara de seguridad:");
                 String nombreCamara = scanner.nextLine(); // Ahora esto debería funcionar correctamente
-                // Suponiendo que tienes un constructor Camara que toma el nombre como parámetro
                 Camara camara = new Camara(nombreCamara);
                 System.out.println("Cámara agregada: " + nombreCamara);
                 break;
