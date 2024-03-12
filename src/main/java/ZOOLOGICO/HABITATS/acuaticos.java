@@ -5,9 +5,12 @@ public class acuaticos extends habitats{
 
     boolean puede_nadar;
 
-    public acuaticos(float temperatura,float humedad,boolean limpieza) {
+    public acuaticos(float temperatura, float humedad, boolean limpieza) {
         super();
         this.puede_nadar = puede_nadar;
+    }
+
+    public acuaticos(float temperaturaHabitatAcuatico, float humedadHabitatAcuatico, float limpiezaHabitatAcuatico) {
     }
 
 

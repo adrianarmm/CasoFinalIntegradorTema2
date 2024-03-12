@@ -362,8 +362,8 @@ public class Main {
                                 float temperaturaAcuarioAMonitorear = scanner.nextFloat();
                                 System.out.println("Ingresa la salinidad del acuario:");
                                 float salinidadAcuarioAMonitorear = scanner.nextFloat();
-                                System.out.println("Ingresa la limpieza del acuario (verdadero/falso):");
-                                boolean limpiezaAcuarioAMonitorear = scanner.nextBoolean();
+                                System.out.println("Ingresa la limpieza del acuario :");
+                                float limpiezaAcuarioAMonitorear = scanner.nextFloat();
                                 acuaticos acuarioAMonitorear = new acuaticos(temperaturaAcuarioAMonitorear, salinidadAcuarioAMonitorear, limpiezaAcuarioAMonitorear);
                                 acuarioAMonitorear.toString();
                                 break;
