@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7567afc1-3eab-4474-bc0a-a50303a0f0c7" name="Changes" comment="cambios">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="7567afc1-3eab-4474-bc0a-a50303a0f0c7" name="Changes" comment="cambios" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -244,7 +241,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710265183794</updated>
-      <workItem from="1710265184928" duration="1255000" />
+      <workItem from="1710265184928" duration="1645000" />
     </task>
     <task id="LOCAL-00024" summary="cambios">
       <option name="closed" value="true" />
@@ -270,7 +267,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710265899740</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="cambios">
+      <option name="closed" value="true" />
+      <created>1710267814461</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1710267814461</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
