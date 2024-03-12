@@ -309,9 +309,11 @@ public class Main {
 
 
             // Opciones relacionadas con los hábitats
+
             System.out.println("1. Crear un hábitat");
             System.out.println("2. Realizar acciones en hábitats");
             System.out.println("3. Salir");
+
 
             int eleccionHabitat = scanner.nextInt();
             switch (eleccionHabitat) {
