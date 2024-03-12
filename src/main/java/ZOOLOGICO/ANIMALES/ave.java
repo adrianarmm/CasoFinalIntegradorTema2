@@ -1,18 +1,16 @@
 package ZOOLOGICO.ANIMALES;
 
-import ZOOLOGICO.ANIMALES.animal;
-
 public class ave extends animal {
 
-    boolean vuela;
-    boolean pico;
-    boolean plumaje;
+    float vuela;
+    float pico;
+    float plumaje;
     String tipodeave;
 
     public ave (String nombre, String especie, String raza, String color, String sexo, String edad,
-                          String peso, String altura, String tipo, String habitat, String alimentacion, String reproduccion,
-                          String cuidados, String enfermedades, String vacunas, int id, boolean salud, boolean comportamiento,  boolean vuela, boolean pico,
-                          boolean plumaje, String tipo_aviario) {
+                String peso, String altura, String tipo, String habitat, String alimentacion, String reproduccion,
+                String cuidados, String enfermedades, String vacunas, int id, boolean salud, boolean comportamiento, float vuela, float pico,
+                float plumaje, String tipo_aviario) {
         super(nombre, especie, raza, color, sexo, edad, peso, altura, tipo, habitat, alimentacion, reproduccion, cuidados,
                 enfermedades, vacunas, id, salud, comportamiento);
         this.vuela = vuela;
@@ -21,27 +19,27 @@ public class ave extends animal {
         this.tipodeave = tipo_aviario;
     }
 
-    public boolean isVuela() {
+    public float isVuela() {
         return vuela;
     }
 
-    public void setVuela(boolean vuela) {
+    public void setVuela(float vuela) {
         this.vuela = vuela;
     }
 
-    public boolean isPico() {
+    public float isPico() {
         return pico;
     }
 
-    public void setPico(boolean pico) {
+    public void setPico(float pico) {
         this.pico = pico;
     }
 
-    public boolean isPlumaje() {
+    public float isPlumaje() {
         return plumaje;
     }
 
-    public void setPlumaje(boolean plumaje) {
+    public void setPlumaje(float plumaje) {
         this.plumaje = plumaje;
     }
 

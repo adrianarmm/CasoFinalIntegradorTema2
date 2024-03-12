@@ -2,12 +2,12 @@ package ZOOLOGICO.ANIMALES;
 
 public class acuatico extends animal {
 
-    boolean aletas;
-    boolean branquias;
-    boolean escamas;
+    float aletas;
+    float branquias;
+    float escamas;
     String tipodeagua;
 
-    public acuatico(String nombre, String especie, String raza, String color, String sexo, String edad, String peso, String altura, String tipo, String habitat, String alimentacion, String reproduccion, String cuidados, String enfermedades, String vacunas, int id, boolean salud, boolean comportamiento, boolean aletas, boolean branquias, boolean escamas, String tipodeagua) {
+    public acuatico(String nombre, String especie, String raza, String color, String sexo, String edad, String peso, String altura, String tipo, String habitat, String alimentacion, String reproduccion, String cuidados, String enfermedades, String vacunas, int id, boolean salud, boolean comportamiento, float aletas, float branquias, float escamas, String tipodeagua) {
         super(nombre, especie, raza, color, sexo, edad, peso, altura, tipo, habitat, alimentacion, reproduccion, cuidados, enfermedades, vacunas, id, salud, comportamiento);
         this.aletas = aletas;
         this.branquias = branquias;
@@ -15,27 +15,27 @@ public class acuatico extends animal {
         this.tipodeagua = tipodeagua;
     }
 
-    public boolean isAletas() {
+    public float isAletas() {
             return aletas;
         }
 
-        public void setAletas(boolean aletas) {
+        public void setAletas(float aletas) {
             this.aletas = aletas;
         }
 
-    public boolean isBranquias() {
+    public float isBranquias() {
         return branquias;
     }
 
-    public void setBranquias(boolean branquias) {
+    public void setBranquias(float branquias) {
         this.branquias = branquias;
     }
 
-    public boolean isEscamas() {
+    public float isEscamas() {
         return escamas;
     }
 
-    public void setEscamas(boolean escamas) {
+    public void setEscamas(float escamas) {
         this.escamas = escamas;
     }
 

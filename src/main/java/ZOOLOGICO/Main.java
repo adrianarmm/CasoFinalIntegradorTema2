@@ -49,14 +49,16 @@ public class Main {
                 // Crear un animal acuático
                 System.out.println("Ingresa el nombre del animal acuático:");
                 String nombreAnimalAcuatico = scanner.next();
-                boolean aletas, branquias, escamas;
+                float aletas;
+                float branquias;
+                float escamas;
                 String tipoDeAgua;
-                System.out.println("Ingresa aletas (verdadero/falso):");
-                aletas = scanner.nextBoolean();
-                System.out.println("Ingresa branquias (verdadero/falso):");
-                branquias = scanner.nextBoolean();
-                System.out.println("Ingresa escamas (verdadero/falso):");
-                escamas = scanner.nextBoolean();
+                System.out.println("Ingresa aletas :");
+                aletas = scanner.nextFloat();
+                System.out.println("Ingresa branquias :");
+                branquias = scanner.nextFloat();
+                System.out.println("Ingresa escamas:");
+                escamas = scanner.nextFloat();
                 System.out.println("Ingresa el tipo de agua (dulce/salada):");
                 tipoDeAgua = scanner.next();
                 acuatico animalAcuatico = new acuatico(nombreAnimalAcuatico, "", "", "", "", "", "", "", "", "", "", "", "", "", "", 0, true, true, aletas, branquias, escamas, tipoDeAgua);
@@ -66,14 +68,16 @@ public class Main {
                 // Crear un ave
                 System.out.println("Ingresa el nombre del ave:");
                 String nombreAve = scanner.next();
-                boolean vuela, pico, plumaje;
+                float vuela;
+                float pico;
+                float plumaje;
                 String tipoDeAve;
                 System.out.println("Ingresa vuela (verdadero/falso):");
-                vuela = scanner.nextBoolean();
+                vuela = scanner.nextFloat();
                 System.out.println("Ingresa pico (verdadero/falso):");
-                pico = scanner.nextBoolean();
+                pico = scanner.nextFloat();
                 System.out.println("Ingresa plumaje (verdadero/falso):");
-                plumaje = scanner.nextBoolean();
+                plumaje = scanner.nextFloat();
                 System.out.println("Ingresa el tipo de aviario (jaula/aviario):");
                 tipoDeAve = scanner.next();
                 ave ave = new ave(nombreAve, "", "", "", "", "", "", "", "", "", "", "", "", "", "", 0, true, true, vuela, pico, plumaje, tipoDeAve);
@@ -83,14 +87,16 @@ public class Main {
                 // Crear un animal terrestre
                 System.out.println("Ingresa el nombre del animal terrestre:");
                 String nombreAnimalTerrestre = scanner.next();
-                boolean patas, cola, pelaje;
+                float patas;
+                float cola;
+                float pelaje;
                 String tipoTerrestre;
-                System.out.println("Ingresa patas (verdadero/falso):");
-                patas = scanner.nextBoolean();
-                System.out.println("Ingresa cola (verdadero/falso):");
-                cola = scanner.nextBoolean();
-                System.out.println("Ingresa pelaje (verdadero/falso):");
-                pelaje = scanner.nextBoolean();
+                System.out.println("Ingresa patas :");
+                patas = scanner.nextFloat();
+                System.out.println("Ingresa cola :");
+                cola = scanner.nextFloat();
+                System.out.println("Ingresa pelaje :");
+                pelaje = scanner.nextFloat();
                 System.out.println("Ingresa el tipo de terreno (bosque/sabana):");
                 tipoTerrestre = scanner.next();
                 terrestre animalTerrestre = new terrestre(nombreAnimalTerrestre, "", "", "", "", "", "", "", "", "", "", "", "", "", "", 0, true, true, patas, cola, pelaje, tipoTerrestre);
@@ -123,9 +129,9 @@ public class Main {
                     case 1:
                         // Registrar alimentación
                         System.out.println("Ingresa el nombre del animal:");
-                        String animalParaAlimentacion = scanner.next();
+                        Float animalParaAlimentacion = Float.valueOf(scanner.next());
                         System.out.println("Ingresa la alimentación:");
-                        String alimentacion = scanner.next();
+                        Float alimentacion = Float.valueOf(scanner.next());
                         // Encontrar el animal y registrar la alimentación
                         break;
                     case 2:
@@ -311,8 +317,8 @@ public class Main {
                         float temperaturaHabitatAcuatico = scanner.nextFloat();
                         System.out.println("Ingresa la humedad del hábitat acuático:");
                         float humedadHabitatAcuatico = scanner.nextFloat();
-                        System.out.println("Ingresa la limpieza del hábitat acuático (verdadero/falso):");
-                        boolean limpiezaHabitatAcuatico = scanner.nextBoolean();
+                        System.out.println("Ingresa la limpieza del hábitat acuático :");
+                        float limpiezaHabitatAcuatico = scanner.nextFloat();
                         acuaticos habitatAcuatico = new acuaticos(temperaturaHabitatAcuatico, humedadHabitatAcuatico, limpiezaHabitatAcuatico);
                         System.out.println("Hábitat acuático creado: " + habitatAcuatico);
                         break;

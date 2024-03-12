@@ -1,18 +1,16 @@
 package ZOOLOGICO.ANIMALES;
 
-import ZOOLOGICO.ANIMALES.animal;
-
 public class terrestre extends animal {
 
-    boolean patas;
-    boolean cola;
-    boolean pelaje;
+    float patas;
+    float cola;
+    float pelaje;
     String tipo_terrestre;
 
     public terrestre(String nombre, String especie, String raza, String color, String sexo, String edad,
-                            String peso, String altura, String tipo, String habitat, String alimentacion, String reproduccion,
-                            String cuidados, String enfermedades, String vacunas, int id,boolean salud, boolean comportamiento,  boolean patas, boolean cola,
-                            boolean pelaje, String tipo_terrestre) {
+                     String peso, String altura, String tipo, String habitat, String alimentacion, String reproduccion,
+                     String cuidados, String enfermedades, String vacunas, int id, boolean salud, boolean comportamiento, float patas, float cola,
+                     float pelaje, String tipo_terrestre) {
         super(nombre, especie, raza, color, sexo, edad, peso, altura, tipo, habitat, alimentacion, reproduccion, cuidados,
                 enfermedades, vacunas, id, salud, comportamiento);
         this.patas = patas;
@@ -21,27 +19,27 @@ public class terrestre extends animal {
         this.tipo_terrestre = tipo_terrestre;
     }
 
-    public boolean isPatas() {
+    public float isPatas() {
         return patas;
     }
 
-    public void setPatas(boolean patas) {
+    public void setPatas(float patas) {
         this.patas = patas;
     }
 
-    public boolean isCola() {
+    public float isCola() {
         return cola;
     }
 
-    public void setCola(boolean cola) {
+    public void setCola(float cola) {
         this.cola = cola;
     }
 
-    public boolean isPelaje() {
+    public float isPelaje() {
         return pelaje;
     }
 
-    public void setPelaje(boolean pelaje) {
+    public void setPelaje(float pelaje) {
         this.pelaje = pelaje;
     }
 
