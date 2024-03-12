@@ -591,11 +591,11 @@ public class Main {
         System.out.println("1. Agregar una cámara de seguridad");
         System.out.println("2. Salir");
 
-        int eleccionSeguridad =scanner.nextInt();
+        int eleccionSeguridad = scanner.nextInt();
         switch (eleccionSeguridad) {
             case 1:
                 System.out.println("Ingresa el nombre de la cámara de seguridad:");
-                String nombreCamara = scanner.nextLine(); // Ahora esto debería funcionar correctamente
+                int nombreCamara = scanner.nextInt(); // Ahora esto debería funcionar correctamente
                 Camara camara = new Camara(nombreCamara);
                 System.out.println("Cámara agregada: " + nombreCamara);
                 break;

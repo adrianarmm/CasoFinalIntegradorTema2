@@ -3,8 +3,8 @@ package ZOOLOGICO.MANTENIMIENTO;
 public class Camara extends DispositivoSeguridad{
 
 
-        public Camara(String ubicacion) {
-            super(ubicacion);
+        public Camara(int ubicacion) {
+            super(String.valueOf(ubicacion));
         }
 
         @Override
