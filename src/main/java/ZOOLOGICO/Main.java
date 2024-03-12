@@ -551,7 +551,7 @@ public class Main {
                 System.out.println("Ingresa el nombre del recurso:");
                 int cantidadRecursoMostrar = scanner.nextInt();
                 System.out.println("Ingresa la cantidad del recurso:");
-                cantidadRecurso = scanner.nextInt();
+                cantidadRecursoMostrar = scanner.nextInt();
                 AdministracionRecursos administracionRecursosMostrar = new AdministracionRecursos();
                 administracionRecursosMostrar.mostrarInventario();
                 break;
@@ -583,35 +583,27 @@ public class Main {
                 // Sal
 
                 // Opciones relacionadas con la seguridad
+                System.out.println("1. Agregar una cámara de seguridad");
+                System.out.println("2. Salir");
 
-                boolean salirSeguridad = false;
-                while (!salirSeguridad) {
-                    System.out.println("\nOpciones de seguridad:");
-                    System.out.println("1. Agregar una cámara de seguridad");
-                    System.out.println("2. Salir");
-                    System.out.println("Ingresa la opción deseada:");
-                    Scanner scannerOfrec  = new Scanner(System.in);
-                    eleccion = scannerOfrec.nextInt();
-                    scannerOfrec.nextLine(); // Limpiar el buffer del scanner
-
-                            switch (eleccion) {
+                int eleccionSeguridad = scanner.nextInt();
+                switch (eleccionSeguridad) {
                                 case 1:
                                     System.out.println("Ingresa el nombre de la cámara de seguridad:");
-                                    String nombreCamara = scannerOfrec.nextLine();
+                                    String nombreCamara = scanner.nextLine();
                                     System.out.println("Cámara agregada: " + nombreCamara);
                                     break;
                                 case 2:
                                     System.out.println("Saliendo de las opciones de seguridad...");
-                                    salirSeguridad = true;
+                                    boolean salirSeguridad = true;
                                     break;
                                 default:
                                     System.out.println("Opción no válida. Intente de nuevo.");
                                     break;
                             }
-                            scannerOfrec.close();
+                            scanner.close();
                         }
                     }
                 }
-}
 
 
