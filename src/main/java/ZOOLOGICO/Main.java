@@ -582,6 +582,9 @@ public class Main {
             case 5:
                 // Sal
 
+                default:
+                    System.out.println("Opción inválida.");
+
                 // Opciones relacionadas con la seguridad
                 System.out.println("1. Agregar una cámara de seguridad");
                 System.out.println("2. Salir");
