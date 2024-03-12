@@ -3,9 +3,12 @@ package ZOOLOGICO.HABITATS;
 public class terrestres extends habitats{
     boolean puede_caminar;
 
-    public terrestres(float temperatura,float humedad,boolean limpieza) {
+    public terrestres(float temperatura, float limpieza, boolean limpiezaTerrarioAMonitorear) {
         super();
         this.puede_caminar = puede_caminar;
+    }
+
+    public terrestres(float temperaturaTerrarioAMonitorear, float humedadTerrarioAMonitorear, float limpiezaTerrarioAMonitorear) {
     }
 
     @Override

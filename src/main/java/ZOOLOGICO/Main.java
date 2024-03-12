@@ -317,8 +317,8 @@ public class Main {
                         float temperaturaHabitatTerrestre = scanner.nextFloat();
                         System.out.println("Ingresa la humedad del hábitat terrestre:");
                         float humedadHabitatTerrestre = scanner.nextFloat();
-                        System.out.println("Ingresa la limpieza del hábitat terrestre (verdadero/falso):");
-                        boolean limpiezaHabitatTerrestre = scanner.nextBoolean();
+                        System.out.println("Ingresa la limpieza del hábitat terrestre :");
+                        float limpiezaHabitatTerrestre = scanner.nextFloat();
                         terrestres habitatTerrestre = new terrestres(temperaturaHabitatTerrestre, humedadHabitatTerrestre, limpiezaHabitatTerrestre);
                         System.out.println("Hábitat terrestre creado: " + habitatTerrestre);
                         break;
