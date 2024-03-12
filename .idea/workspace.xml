@@ -5,6 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7567afc1-3eab-4474-bc0a-a50303a0f0c7" name="Changes" comment="cambios">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/ANIMALES/acuatico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/ANIMALES/acuatico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/ANIMALES/animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/ANIMALES/animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/ANIMALES/ave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/ANIMALES/ave.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/ANIMALES/terrestre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/ANIMALES/terrestre.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +20,9 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
@@ -176,7 +184,23 @@
       <option name="project" value="LOCAL" />
       <updated>1710263940583</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="cambios">
+      <option name="closed" value="true" />
+      <created>1710264293585</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1710264293585</updated>
+    </task>
+    <task id="LOCAL-00021" summary="cambios">
+      <option name="closed" value="true" />
+      <created>1710264323095</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1710264323095</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

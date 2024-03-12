@@ -21,7 +21,7 @@ public class animal {
     boolean comportamiento;
     int id;
 
-    public animal(String nombre) {
+    public animal() {
         this.nombre = nombre;
         this.especie = especie;
         this.raza = raza;

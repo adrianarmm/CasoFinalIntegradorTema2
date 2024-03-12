@@ -11,7 +11,7 @@ public class ave extends animal {
                 String peso, String altura, String tipo, String habitat, String alimentacion, String reproduccion,
                 String cuidados, String enfermedades, String vacunas, int id, boolean salud, boolean comportamiento, float vuela, float pico,
                 float plumaje, String tipo_aviario) {
-        super(nombre
+        super(
         );
         this.vuela = vuela;
         this.pico = pico;
