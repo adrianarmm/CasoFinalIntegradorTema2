@@ -21,7 +21,7 @@ public class animal {
     boolean comportamiento;
     int id;
 
-    public animal(String nombre, String especie, String raza, String color, String sexo, String edad, String peso, String altura, String tipo, String habitat, String alimentacion, String reproduccion, String cuidados, String enfermedades, String vacunas, int id, boolean salud, boolean comportamiento) {
+    public animal(String nombre) {
         this.nombre = nombre;
         this.especie = especie;
         this.raza = raza;

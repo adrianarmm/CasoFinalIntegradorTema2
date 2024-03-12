@@ -42,7 +42,7 @@ public class Main {
                 // Crear un animal
                 System.out.println("Ingresa el nombre del animal:");
                 String nombreAnimal = scanner.next();
-                animal animal = new animal(nombreAnimal, "", "", "", "", "", "", "", "", "", "", "", "", "", "", 0, true, true);
+                animal animal = new animal(nombreAnimal);
                 System.out.println("Animal creado: " + animal);
                 break;
             case 2:
@@ -129,9 +129,9 @@ public class Main {
                     case 1:
                         //Registrar alimentacion
                         System.out.println("Ingresa el nombre del animal:");
-                        String nombreAnimal = scanner.next();
+                        nombreAnimal = scanner.next();
                         // Suponiendo que "Animal" es una clase que extiende de AnimalBase.
-                        animal = new Animal(nombreAnimal);
+                        animal = new animal(nombreAnimal);
                         System.out.println("Animal creado: " + animal);
                         break;
 
@@ -266,10 +266,11 @@ public class Main {
                     case 18:
                         // Registrar comportamiento
                         System.out.println("Ingresa el comportamiento del animal (verdadero/falso):");
-                        boolean comportamiento = scanner.nextBoolean();
+                        float comportamiento = scanner.nextFloat();
                         animal.setComportamiento(comportamiento);
                         System.out.println("Comportamiento registrado: " + comportamiento);
                         break;
+
 
                     case 19:
                         // Salir

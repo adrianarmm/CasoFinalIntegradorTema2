@@ -8,7 +8,7 @@ public class acuatico extends animal {
     String tipodeagua;
 
     public acuatico(String nombre, String especie, String raza, String color, String sexo, String edad, String peso, String altura, String tipo, String habitat, String alimentacion, String reproduccion, String cuidados, String enfermedades, String vacunas, int id, boolean salud, boolean comportamiento, float aletas, float branquias, float escamas, String tipodeagua) {
-        super(nombre, especie, raza, color, sexo, edad, peso, altura, tipo, habitat, alimentacion, reproduccion, cuidados, enfermedades, vacunas, id, salud, comportamiento);
+        super(nombre);
         this.aletas = aletas;
         this.branquias = branquias;
         this.escamas = escamas;

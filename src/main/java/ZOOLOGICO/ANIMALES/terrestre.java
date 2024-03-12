@@ -11,8 +11,8 @@ public class terrestre extends animal {
                      String peso, String altura, String tipo, String habitat, String alimentacion, String reproduccion,
                      String cuidados, String enfermedades, String vacunas, int id, boolean salud, boolean comportamiento, float patas, float cola,
                      float pelaje, String tipo_terrestre) {
-        super(nombre, especie, raza, color, sexo, edad, peso, altura, tipo, habitat, alimentacion, reproduccion, cuidados,
-                enfermedades, vacunas, id, salud, comportamiento);
+        super(nombre
+        );
         this.patas = patas;
         this.cola = cola;
         this.pelaje = pelaje;
