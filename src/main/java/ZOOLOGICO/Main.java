@@ -298,7 +298,7 @@ public class Main {
                         System.out.println("Ingresa la limpieza del aviario :");
                         float limpiezaAviario = scanner.nextFloat();
                         ZOOLOGICO.HABITATS.ave aviario = new ZOOLOGICO.HABITATS.ave(temperaturaAviario);
-                        System.out.println("Aviario creado: " + aviario);
+                        System.out.println("Hábitat aviario creado: " + aviario);
                         break;
                     case 2:
                         // Crear un hábitat acuático
@@ -373,7 +373,7 @@ public class Main {
                                 float temperaturaTerrarioAMonitorear = scanner.nextFloat();
                                 System.out.println("Ingresa la humedad del terrario:");
                                 float humedadTerrarioAMonitorear = scanner.nextFloat();
-                                System.out.println("Ingresa la limpieza del terrario (verdadero/falso):");
+                                System.out.println("Ingresa la limpieza del terrario :");
                                 boolean limpiezaTerrarioAMonitorear = scanner.nextBoolean();
                                 terrestres terrarioAMonitorear = new terrestres(temperaturaTerrarioAMonitorear, humedadTerrarioAMonitorear, limpiezaTerrarioAMonitorear);
                                 terrarioAMonitorear.toString();
