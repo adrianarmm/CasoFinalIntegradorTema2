@@ -602,8 +602,15 @@ public class Main {
                 break;
 
             case 2:
+                System.out.println("Ingresa la ubicación del sensor de movimiento:");
+                String ubicacionSensor = scanner.next();
+                SensorMovimiento sensor = new SensorMovimiento(ubicacionSensor);
+                System.out.println("Sensor de movimiento agregado: " + ubicacionSensor);
+                break;
+
+            case 3:
                 System.out.println("Saliendo de las opciones de seguridad...");
-                // Aquí debes manejar la salida de las opciones de seguridad, si tienes un bucle, deberías modificar su condición aquí
+
                 break;
             default:
                 System.out.println("Opción no válida. Intente de nuevo.");
