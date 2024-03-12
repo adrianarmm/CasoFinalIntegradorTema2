@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7567afc1-3eab-4474-bc0a-a50303a0f0c7" name="Changes" comment="cambios">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="7567afc1-3eab-4474-bc0a-a50303a0f0c7" name="Changes" comment="cambios" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
@@ -109,7 +110,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710242873126</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="cambios">
+      <option name="closed" value="true" />
+      <created>1710242936696</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1710242936696</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -121,7 +130,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ZOOLOGICO/Main.java</url>
-          <line>594</line>
+          <line>595</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>

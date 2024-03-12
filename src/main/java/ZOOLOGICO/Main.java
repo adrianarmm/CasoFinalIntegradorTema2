@@ -30,6 +30,11 @@ public class Main {
         System.out.println("Bienvenidos al zoológico");
         System.out.println("=== Menú ===");
         System.out.println("1. Crear un animal");
+        System.out.println("2. Crear un animal acuático");
+        System.out.println("3. Crear un ave");
+        System.out.println("4. Crear un animal terrestre");
+        System.out.println("5. Realizar acciones de animales");
+        System.out.println("6. Salir");
 
         int eleccion = scanner.nextInt();
         switch (eleccion) {
