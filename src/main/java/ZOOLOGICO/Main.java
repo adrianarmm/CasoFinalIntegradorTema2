@@ -282,7 +282,7 @@ public class Main {
         switch (eleccionHabitat) {
             case 1:
                 // Crear un hábitat
-                System.out.println("1. Crear un aviario");
+                System.out.println("1. Crear un hábitat aviario");
                 System.out.println("2. Crear un hábitat acuático");
                 System.out.println("3. Crear un hábitat terrestre");
                 System.out.println("4. Salir");
