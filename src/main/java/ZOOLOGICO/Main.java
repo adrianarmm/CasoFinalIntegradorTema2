@@ -129,11 +129,11 @@ public class Main {
                     case 1:
                         //Registrar alimentacion
 
-
-
-
-
-
+                        System.out.println("Ingresa la alimentación del animal:");
+                        String alimentacion = scanner.next();
+                        animal.setAlimentacion(alimentacion);
+                        System.out.println("Alimentación registrada: " + alimentacion);
+                        break;
 
                     case 2:
                         // Registrar reproducción
