@@ -4,12 +4,16 @@ public class ave extends habitats {
     boolean puede_volar;
 
     public ave(float temperatura,float humedad,boolean limpieza, boolean puede_volar) {
-        super(temperatura, humedad, limpieza);
+        super();
         this.puede_volar = puede_volar;
     }
 
     public ave(float temperatura, float humedad, boolean limpieza) {
-        super(temperatura, humedad, limpieza);
+        super();
+    }
+
+    public ave(float temperaturaAviario) {
+        super();
     }
 
     public String toString() {

@@ -4,7 +4,7 @@ public class terrestres extends habitats{
     boolean puede_caminar;
 
     public terrestres(float temperatura,float humedad,boolean limpieza) {
-        super(temperatura, humedad, limpieza);
+        super();
         this.puede_caminar = puede_caminar;
     }
 

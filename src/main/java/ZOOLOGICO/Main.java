@@ -28,11 +28,6 @@ public class Main {
 
         // Opciones relacionadas con los animales
         System.out.println("1. Crear un animal");
-        System.out.println("2. Crear un animal acuático");
-        System.out.println("3. Crear un ave");
-        System.out.println("4. Crear un animal terrestre");
-        System.out.println("5. Realizar acciones de animales");
-        System.out.println("6. Salir");
 
         int eleccion = scanner.nextInt();
         switch (eleccion) {
@@ -298,9 +293,9 @@ public class Main {
                         float temperaturaAviario = scanner.nextFloat();
                         System.out.println("Ingresa la humedad del aviario:");
                         float humedadAviario = scanner.nextFloat();
-                        System.out.println("Ingresa la limpieza del aviario (verdadero/falso):");
-                        boolean limpiezaAviario = scanner.nextBoolean();
-                        ZOOLOGICO.HABITATS.ave aviario = new ZOOLOGICO.HABITATS.ave(temperaturaAviario, humedadAviario, limpiezaAviario);
+                        System.out.println("Ingresa la limpieza del aviario :");
+                        float limpiezaAviario = scanner.nextFloat();
+                        ZOOLOGICO.HABITATS.ave aviario = new ZOOLOGICO.HABITATS.ave(temperaturaAviario);
                         System.out.println("Aviario creado: " + aviario);
                         break;
                     case 2:
