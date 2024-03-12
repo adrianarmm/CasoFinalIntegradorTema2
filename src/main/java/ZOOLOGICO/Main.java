@@ -584,29 +584,28 @@ public class Main {
 
                 default:
                     System.out.println("Opción inválida.");
+}
+        // Opciones relacionadas con la seguridad
+        System.out.println("1. Agregar una cámara de seguridad");
+        System.out.println("2. Salir");
 
-                // Opciones relacionadas con la seguridad
-                System.out.println("1. Agregar una cámara de seguridad");
-                System.out.println("2. Salir");
+        int eleccionSeguridad = scanner.nextInt();
+        switch (eleccionSeguridad) {
+            case 1:
+                System.out.println("Ingresa el nombre de la cámara de seguridad:");
+                String nombreCamara = scanner.nextLine();
+                System.out.println("Cámara agregada: " + nombreCamara);
+                break;
 
-                int eleccionSeguridad = scanner.nextInt();
-                switch (eleccionSeguridad) {
-                                case 1:
-                                    System.out.println("Ingresa el nombre de la cámara de seguridad:");
-                                    String nombreCamara = scanner.nextLine();
-                                    System.out.println("Cámara agregada: " + nombreCamara);
-                                    break;
-                                case 2:
-                                    System.out.println("Saliendo de las opciones de seguridad...");
-                                    boolean salirSeguridad = true;
-                                    break;
-                                default:
-                                    System.out.println("Opción no válida. Intente de nuevo.");
-                                    break;
-                            }
-                            scanner.close();
-                        }
-                    }
-                }
+            case 2:
+                System.out.println("Saliendo de las opciones de seguridad...");
+                boolean salirSeguridad = true;
+                break;
+            default:
+                System.out.println("Opción no válida. Intente de nuevo.");
+                break;
+        }
+    }
+}
 
 
