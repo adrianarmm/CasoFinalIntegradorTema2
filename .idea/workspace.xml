@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5db1ac8a-ea94-437a-84bb-e710ea8f005c" name="Changes" comment="cambios" />
+    <list default="true" id="5db1ac8a-ea94-437a-84bb-e710ea8f005c" name="Changes" comment="cambios">
+      <change beforePath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ZOOLOGICO/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,39 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1709717493665</updated>
-      <workItem from="1709717494919" duration="16473000" />
-    </task>
-    <task id="LOCAL-00105" summary="creaciones">
-      <option name="closed" value="true" />
-      <created>1710182013189</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
-      <option name="project" value="LOCAL" />
-      <updated>1710182013189</updated>
-    </task>
-    <task id="LOCAL-00106" summary="creaciones">
-      <option name="closed" value="true" />
-      <created>1710182054271</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
-      <option name="project" value="LOCAL" />
-      <updated>1710182054272</updated>
-    </task>
-    <task id="LOCAL-00107" summary="creaciones">
-      <option name="closed" value="true" />
-      <created>1710182072339</created>
-      <option name="number" value="00107" />
-      <option name="presentableId" value="LOCAL-00107" />
-      <option name="project" value="LOCAL" />
-      <updated>1710182072339</updated>
-    </task>
-    <task id="LOCAL-00108" summary="nuevo package">
-      <option name="closed" value="true" />
-      <created>1710182151432</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1710182151432</updated>
+      <workItem from="1709717494919" duration="17203000" />
     </task>
     <task id="LOCAL-00109" summary="cambios">
       <option name="closed" value="true" />
@@ -473,7 +443,39 @@
       <option name="project" value="LOCAL" />
       <updated>1710229852154</updated>
     </task>
-    <option name="localTasksCounter" value="154" />
+    <task id="LOCAL-00154" summary="cambios">
+      <option name="closed" value="true" />
+      <created>1710230652923</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1710230652923</updated>
+    </task>
+    <task id="LOCAL-00155" summary="cambios">
+      <option name="closed" value="true" />
+      <created>1710230697403</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1710230697403</updated>
+    </task>
+    <task id="LOCAL-00156" summary="cambios">
+      <option name="closed" value="true" />
+      <created>1710230999109</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1710230999109</updated>
+    </task>
+    <task id="LOCAL-00157" summary="cambios">
+      <option name="closed" value="true" />
+      <created>1710231046890</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1710231046890</updated>
+    </task>
+    <option name="localTasksCounter" value="158" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
