@@ -128,7 +128,6 @@ public class Main {
                 switch (eleccionAccionAnimal) {
                     case 1:
                         //Registrar alimentacion
-
                         System.out.println("Ingresa la alimentación del animal:");
                         String alimentacion = scanner.next();
                         animal.setAlimentacion(alimentacion);
