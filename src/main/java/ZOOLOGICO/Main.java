@@ -125,7 +125,162 @@ public class Main {
                 System.out.println("19. Salir");
 
                 int eleccionAccionAnimal = scanner.nextInt();
+                animal  = null;
                 switch (eleccionAccionAnimal) {
+                        case 1:
+                            //Registrar alimentacion
+                            System.out.println("Ingresa el nombre del animal:");
+                            nombreAnimal = scanner.next();
+                            // Suponiendo que "Animal" es una clase que extiende de AnimalBase.
+                            animal = new animal(nombreAnimal);
+                            System.out.println("Animal creado: " + animal);
+                            break;
+
+                        case 2:
+                            // Registrar reproducción
+                            System.out.println("Ingresa la reproducción del animal:");
+                            String reproduccion = scanner.next();
+                            animal.setReproduccion(reproduccion);
+                            System.out.println("Reproducción registrada: " + reproduccion);
+                            break;
+
+                        case 3:
+                            // Registrar cuidados
+                            System.out.println("Ingresa los cuidados del animal:");
+                            String cuidados = scanner.next();
+                            animal.setCuidados(cuidados);
+                            System.out.println("Cuidados registrados: " + cuidados);
+                            break;
+
+                        case 4:
+                            // Registrar enfermedades
+                            System.out.println("Ingresa las enfermedades del animal:");
+                            String enfermedades = scanner.next();
+                            animal.setEnfermedades(enfermedades);
+                            System.out.println("Enfermedades registradas: " + enfermedades);
+                            break;
+
+                        case 5:
+                            // Registrar vacunas
+                            System.out.println("Ingresa las vacunas del animal:");
+                            String vacunas = scanner.next();
+                            animal.setVacunas(vacunas);
+                            System.out.println("Vacunas registradas: " + vacunas);
+                            break;
+
+                        case 6:
+                            // Registrar hábitat
+                            System.out.println("Ingresa el hábitat del animal:");
+                            String habitat = scanner.next();
+                            animal.setHabitat(habitat);
+                            System.out.println("Hábitat registrado: " + habitat);
+                            break;
+
+                        case 7:
+                            // Registrar peso
+                            System.out.println("Ingresa el peso del animal:");
+                            String peso = scanner.next();
+                            animal.setPeso(peso);
+                            System.out.println("Peso registrado: " + peso);
+                            break;
+
+                        case 8:
+                            // Registrar altura
+                            System.out.println("Ingresa la altura del animal:");
+                            String altura = scanner.next();
+                            animal.setAltura(altura);
+                            System.out.println("Altura registrada: " + altura);
+                            break;
+
+                        case 9:
+                            // Registrar edad
+                            System.out.println("Ingresa la edad del animal:");
+                            String edad = scanner.next();
+                            animal.setEdad(edad);
+                            System.out.println("Edad registrada: " + edad);
+                            break;
+
+                        case 10:
+                            // Registrar color
+                            System.out.println("Ingresa el color del animal:");
+                            String color = scanner.next();
+                            animal.setColor(color);
+                            System.out.println("Color registrado: " + color);
+                            break;
+
+                        case 11:
+                            // Registrar raza
+                            System.out.println("Ingresa la raza del animal:");
+                            String raza = scanner.next();
+                            animal.setRaza(raza);
+                            System.out.println("Raza registrada: " + raza);
+                            break;
+
+                        case 12:
+                            // Registrar especie
+                            System.out.println("Ingresa la especie del animal:");
+                            String especie = scanner.next();
+                            animal.setEspecie(especie);
+                            System.out.println("Especie registrada: " + especie);
+                            break;
+
+                        case 13:
+                            // Registrar nombre
+                            System.out.println("Ingresa el nombre del animal:");
+                            String nombre = scanner.next();
+                            animal.setNombre(nombre);
+                            System.out.println("Nombre registrado: " + nombre);
+                            break;
+
+                        case 14:
+                            // Registrar sexo
+                            System.out.println("Ingresa el sexo del animal:");
+                            String sexo = scanner.next();
+                            animal.setSexo(sexo);
+                            System.out.println("Sexo registrado: " + sexo);
+                            break;
+
+                        case 15:
+                            // Registrar tipo
+                            System.out.println("Ingresa el tipo del animal:");
+                            String tipo = scanner.next();
+                            animal.setTipo(tipo);
+                            System.out.println("Tipo registrado: " + tipo);
+                            break;
+
+                        case 16:
+                            // Registrar ID
+                            System.out.println("Ingresa el ID del animal:");
+                            int id = scanner.nextInt();
+                            animal.setId(id);
+                            System.out.println("ID registrado: " + id);
+                            break;
+
+                        case 17:
+                            // Registrar salud
+                            System.out.println("Ingresa la salud del animal (verdadero/falso):");
+                            boolean salud = scanner.nextBoolean();
+                            animal.setSalud(salud);
+                            System.out.println("Salud registrada: " + salud);
+                            break;
+
+                        case 18:
+                            // Registrar comportamiento
+                            System.out.println("Ingresa el comportamiento del animal:");
+                            boolean comportamiento = scanner.nextBoolean();
+                            animal.setComportamiento(comportamiento);
+                            System.out.println("Comportamiento registrado: " + comportamiento);
+                            break;
+
+
+
+                        case 19:
+                            // Salir
+                            break;
+                        default:
+                            System.out.println("Opción inválida.");
+                    }
+                    break;
                     case 1:
                         //Registrar alimentacion
                         System.out.println("Ingresa el nombre del animal:");
@@ -265,11 +420,12 @@ public class Main {
 
                     case 18:
                         // Registrar comportamiento
-                        System.out.println("Ingresa el comportamiento del animal (verdadero/falso):");
-                        float comportamiento = scanner.nextFloat();
+                        System.out.println("Ingresa el comportamiento del animal:");
+                        boolean comportamiento = scanner.nextBoolean();
                         animal.setComportamiento(comportamiento);
                         System.out.println("Comportamiento registrado: " + comportamiento);
                         break;
+
 
 
                     case 19:
@@ -277,8 +433,9 @@ public class Main {
                         break;
                     default:
                         System.out.println("Opción inválida.");
-                }
+
                 break;
+
 
         // Opciones relacionadas con los hábitats
         System.out.println("1. Crear un hábitat");
