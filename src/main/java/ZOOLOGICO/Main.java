@@ -76,11 +76,11 @@ public class Main {
                 float pico;
                 float plumaje;
                 String tipoDeAve;
-                out.println("Ingresa vuela (verdadero/falso):");
+                out.println("Ingresa vuela :");
                 vuela = scanner.nextFloat();
-                out.println("Ingresa pico (verdadero/falso):");
+                out.println("Ingresa pico:");
                 pico = scanner.nextFloat();
-                out.println("Ingresa plumaje (verdadero/falso):");
+                out.println("Ingresa plumaje :");
                 plumaje = scanner.nextFloat();
                 out.println("Ingresa el tipo de aviario (jaula/aviario):");
                 tipoDeAve = scanner.next();
@@ -417,7 +417,7 @@ public class Main {
                                     out.println("Ingresa la humedad del terrario:");
                                     float humedadTerrarioAMonitorear = scanner.nextFloat();
                                     out.println("Ingresa la limpieza del terrario :");
-                                    boolean limpiezaTerrarioAMonitorear = scanner.nextBoolean();
+                                    float limpiezaTerrarioAMonitorear = scanner.nextFloat();
                                     terrestres terrarioAMonitorear = new terrestres(temperaturaTerrarioAMonitorear, humedadTerrarioAMonitorear, limpiezaTerrarioAMonitorear);
                                     terrarioAMonitorear.toString();
                                     break;
@@ -592,6 +592,7 @@ public class Main {
                     // Mostrar recursos
                     out.println("Recursos:");
                     out.println("Ingresa el nombre del recurso:");
+
                     int cantidadRecursoMostrar = scanner.nextInt();
                     out.println("Ingresa la cantidad del recurso:");
                     cantidadRecursoMostrar = scanner.nextInt();
@@ -624,9 +625,7 @@ public class Main {
                     break;
                 case 5:
                     // Sal
-
-                default:
-                    out.println("Opción inválida.");
+                    break;
             }
 
 
