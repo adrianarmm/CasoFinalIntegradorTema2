@@ -580,15 +580,15 @@ public class Main {
             case 5:
                 // Sal
 
+                // Opciones relacionadas con la seguridad
+                System.out.println("1. Agregar una cámara");
+                System.out.println("2. Agregar un sensor de movimiento");
+                System.out.println("3. Monitorear dispositivos de seguridad");
+                System.out.println("4. Salir");
 
 
                 int eleccionSeguridad = scanner.nextInt();
                 switch (eleccionSeguridad) {
-                    // Opciones relacionadas con la seguridad
-                        System.out.println("1. Agregar una cámara");
-                        System.out.println("2. Agregar un sensor de movimiento");
-                        System.out.println("3. Monitorear dispositivos de seguridad");
-                        System.out.println("4. Salir");
                     case 1:
                         // Agregar una cámara
                         System.out.println("Introduce la descripción de la cámara:");
